@@ -1,0 +1,34 @@
+\name{unstackDataframe}
+\alias{unstackDataframe}
+\title{Unstack columns in a dataframe by a set of factor levels}
+\usage{
+unstackDataframe(dfr, unstackCols = NULL, factorCols = NULL,
+  dropCols = NULL, debug = TRUE)
+}
+\arguments{
+  \item{dfr}{- the dataframe}
+
+  \item{unstackCols}{- the names of the columns to unstack}
+
+  \item{factorCols}{- a vector of names of columns to use
+  as factors}
+
+  \item{dropCols}{- a vector of names of columns to drop
+  from the result}
+
+  \item{debug}{- flag (T/F) to print out debugging info}
+}
+\value{
+dataframe with unstacked columns and factor levels
+}
+\description{
+Creates a new dataframe by "unstack"ing columns in the
+input dataframe by factor level combinations in a set of
+other columns. Uses \code{getFactorLevels} to find the
+unique factor level combinations from the set of dataaframe
+columns identified as factors.
+}
+\details{
+
+}
+

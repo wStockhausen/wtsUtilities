@@ -1,0 +1,17 @@
+\name{count}
+\alias{count}
+\title{Returns count of x (ignoring NAs)}
+\usage{
+count(x)
+}
+\arguments{
+  \item{x}{- a vector of numbers (or object coerceable to a
+  vector)}
+}
+\value{
+number of non-NAs in x
+}
+\description{
+Returns count of x (ignoring NAs)
+}
+

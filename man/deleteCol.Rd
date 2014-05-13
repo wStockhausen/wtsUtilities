@@ -1,0 +1,19 @@
+\name{deleteCol}
+\alias{deleteCol}
+\title{Delete column in a dataframe or matrix}
+\usage{
+deleteCol(tbl, col)
+}
+\arguments{
+  \item{tbl}{- dataframe or matrix from which to delete
+  column}
+
+  \item{col}{- name of column to delete}
+}
+\value{
+dataframe or matrix with column removed
+}
+\description{
+Delete column in a dataframe or matrix
+}
+

@@ -1,0 +1,29 @@
+\name{computeStats}
+\alias{computeStats}
+\title{computeStats: Calculate count, mean, stdev, and cv of a vector or rows/columns of a matrix, or dataframe}
+\usage{
+computeStats(x, byCol = TRUE, cols.factors = 1, cols.vars = 2)
+}
+\arguments{
+  \item{x}{- vector, matrix or dataframe}
+
+  \item{byCol}{- compute stats by column (if TRUE)}
+
+  \item{cols.factors}{- vector identifying columns to use
+  as factors}
+
+  \item{cols.vars}{- vector identifying columns to use as
+  variables}
+}
+\value{
+- for x a vector, returns vector with count,mean, stdev and
+cv as elements \cr - for x a matrix, returns matrix w/ rows
+with elements count, mean, stdev and cv\cr Rownames
+correspond to column (or row) names of original matrix. -
+for x a dataframe, returns NULL (not yet implemented)
+}
+\description{
+Returns count, mean, stdev, and cv of vector, matrix or
+dataframe
+}
+

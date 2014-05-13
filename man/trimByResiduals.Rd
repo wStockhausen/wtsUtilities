@@ -1,0 +1,24 @@
+\name{trimByResiduals}
+\alias{trimByResiduals}
+\title{Trim rows from a dataframe based on a vector of residuals.}
+\usage{
+trimByResiduals(tbl, resids, n = 5, debug = TRUE)
+}
+\arguments{
+  \item{tbl}{- dataframe with original data. row names
+  should be 1:nrows BEFORE residuals are calculated}
+
+  \item{resids}{- vector of residuals to fit}
+
+  \item{n}{- number of rows to drop}
+
+  \item{debug}{- flag to print diagnostics}
+}
+\value{
+the trimmed dataframe
+}
+\description{
+Trims rows from a dataframe based on a corresponding vector
+of "residuals".
+}
+

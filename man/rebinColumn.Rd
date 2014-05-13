@@ -1,0 +1,29 @@
+\name{rebinColumn}
+\alias{rebinColumn}
+\title{Rebin a column in dataframe}
+\usage{
+rebinColumn(tbl, column = "LENGTH", cutpts = 1:10, binType = c("L", "C",
+  "R"))
+}
+\arguments{
+  \item{tbl}{- dataframe to rebin}
+
+  \item{column}{- name of column to rebin}
+
+  \item{cutpts}{- left cutpts for the rebinning operation}
+
+  \item{binType}{- output type for values ('L','C',or 'R'
+  for left, center or right bin values)}
+}
+\value{
+list with rebinned dataframe ('tbl'), bins ('bins'), and
+cutpts ('cutpts') as elements
+}
+\description{
+Rebin a column in a dataframe based on a vector of
+cutpoints
+}
+\details{
+
+}
+

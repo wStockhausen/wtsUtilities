@@ -1,0 +1,33 @@
+\name{getFactorLevels}
+\alias{getFactorLevels}
+\title{Find the unique combination of levels of a set of "factors" in a dataframe}
+\usage{
+getFactorLevels(dfr, factors, sortBy = NULL, ascending = TRUE,
+  orthogonal = FALSE, debug = FALSE)
+}
+\arguments{
+  \item{dfr}{- input dataframe (or object that can be cast
+  to a dataframe)}
+
+  \item{factors}{- vector of desired factor names from dfr}
+
+  \item{sortBy}{- vector of factor names to sort by (in
+  order of precedence)}
+
+  \item{ascending}{- flag (T/F) to sort in
+  ascending/descending order}
+
+  \item{orthogonal}{- flag (T/F) to form orthogonal
+  combination of individual factors}
+
+  \item{debug}{- flag (T/F) to print debugging info}
+}
+\value{
+a dataframe containing each unique combination of factor
+levels in dfr
+}
+\description{
+Returns the unique combination of levels of the specified
+"factors" in a dataframe.
+}
+

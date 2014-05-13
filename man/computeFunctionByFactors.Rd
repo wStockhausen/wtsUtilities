@@ -1,0 +1,39 @@
+\name{computeFunctionByFactors}
+\alias{computeFunctionByFactors}
+\title{Compute results using an arbitrary function on columns in a dataframe,
+by a set of factor levels}
+\usage{
+computeFunctionByFactors(df, fcn = "sum", factors = NULL, vars = NULL,
+  sortBy = NULL, ascending = TRUE, debug = FALSE)
+}
+\arguments{
+  \item{df}{- dataframe (or object that can be cast to a
+  dataframe) with variables and factors}
+
+  \item{fcn}{- function name AS CHARACTER STRING to apply
+  to each var in vars by each unique factor level
+  combination}
+
+  \item{factors}{- vector of names of columns in df to
+  serve as factors in the function applications}
+
+  \item{vars}{- vector of names of column in df that the
+  function should be applied to}
+
+  \item{sortBy}{- vector of factor column names to sort
+  results by}
+
+  \item{ascending}{- flag (T/F) to sort in
+  ascending/descending order}
+
+  \item{debug}{- flag (T/F) to print debugging info}
+}
+\value{
+dataframe of results with columns corresponding to factors
+and vars
+}
+\description{
+Function to compute results from an arbitrary function
+(fcn) on colunms in a dataframe, by a set of factor levels
+}
+

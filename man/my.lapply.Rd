@@ -1,0 +1,24 @@
+\name{my.lapply}
+\alias{my.lapply}
+\title{my version of lapply}
+\usage{
+my.lapply(X, FUN, ...)
+}
+\arguments{
+  \item{X}{- data to apply function to (coerced to list if
+  necessary)}
+
+  \item{FUN}{- function to apply to X}
+
+  \item{...}{- other inputs to FUN}
+}
+\value{
+result of lapply'ing function to X
+}
+\description{
+A convenience implementation of lapply
+}
+\details{
+
+}
+

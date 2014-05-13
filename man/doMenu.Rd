@@ -1,0 +1,16 @@
+\name{doMenu}
+\alias{doMenu}
+\title{Create a menu of items}
+\usage{
+doMenu(vals = NULL, prompts = NULL)
+}
+\arguments{
+  \item{vals}{- vector of values}
+
+  \item{prompts}{- ??}
+}
+\description{
+Creates a menu of items from a vector of values and a
+vector of prompts
+}
+

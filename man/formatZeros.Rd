@@ -1,0 +1,27 @@
+\name{formatZeros}
+\alias{formatZeros}
+\title{formatZeros: replace blanks with 0's in printed numbers}
+\usage{
+formatZeros(x, width = 2, format = "d", ...)
+}
+\arguments{
+  \item{x}{- numeric vector}
+
+  \item{width}{- width of formatted numbers}
+
+  \item{format}{- c-type format string (see "format"
+  description in base R)}
+
+  \item{...}{- additional inputs to "format"}
+}
+\value{
+character vector with blanks replaced by zeros
+}
+\description{
+Format input vector, replacing leading or trailing blanks
+with zeros.
+}
+\details{
+
+}
+

@@ -1,0 +1,21 @@
+\name{dropNAs}
+\alias{dropNAs}
+\title{Removes all rows from a dataframe based on columns that contain NAs.}
+\usage{
+dropNAs(df, factors)
+}
+\arguments{
+  \item{df}{- input dataframe (or object that can be cast
+  to a dataframe)}
+
+  \item{factors}{- vector of desired column names from df
+  to sort by}
+}
+\value{
+dataframe without NAs in factor columns
+}
+\description{
+Removes all rows from a dataframe where the value in any
+column specified in "factors" contains an NA.
+}
+
