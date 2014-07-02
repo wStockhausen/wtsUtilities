@@ -1,0 +1,16 @@
+\name{getOperatingSystem}
+\alias{getOperatingSystem}
+\title{Get the operating system name.}
+\usage{
+getOperatingSystem()
+}
+\value{
+Either 'MacOSX' or 'Windows'
+}
+\description{
+Function that returns the operating system name.
+}
+\details{
+
+}
+

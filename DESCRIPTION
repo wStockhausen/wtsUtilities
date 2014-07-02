@@ -8,4 +8,4 @@ Maintainer: William T. Stockhausen <william.stockhausen@noaa.gov>
 Description: Collection of generic utility functions.
 Imports:
     tcltk
-License: GPL-2
+License: MIT
