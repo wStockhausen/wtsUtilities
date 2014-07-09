@@ -1,6 +1,6 @@
 \name{getCSV}
 \alias{getCSV}
-\title{Open a csv file}
+\title{Open a csv file as a dataframe.}
 \usage{
 getCSV(csvfile = NULL, caption = "Select csv file to import")
 }

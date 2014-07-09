@@ -1,4 +1,4 @@
-#' @title Open a csv file
+#' @title Open a csv file as a dataframe.
 #'  
 #' @description Opens a csv file and returns it as a dataframe.\cr 
 #' If a file name is not provided, the function displays a (tcltk)
@@ -17,9 +17,7 @@
 #
 getCSV<-function(csvfile=NULL,caption="Select csv file to import"){
     if (is.null(csvfile)) {
-        Filters<-addFilter("csv","csv files (*.csv)","*.csv");
-        csvfile<-tcltk::tk_choose.files(caption=caption,
-                                 multi=FALSE,filters=matrix(Filters[c("csv"),],1,2,byrow=TRUE));
+        csvfile<-selectFile(ext='csv',caption=caption);
         if (length(csvfile)==0) return(NULL);
     }  
     

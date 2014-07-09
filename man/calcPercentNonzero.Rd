@@ -1,0 +1,22 @@
+\name{calcPercentNonzero}
+\alias{calcPercentNonzero}
+\title{Calculate percent non-zero occurrences from a set of dataframe columns, possibly
+by factor levels.}
+\usage{
+calcPercentNonzero(dfr, vars = NULL, factors = NULL)
+}
+\arguments{
+  \item{dfr}{- dataframe with data in columns}
+
+  \item{vars}{- vector of columns (names) on which to
+  calculate percentages}
+
+  \item{factors}{- vector of columns to use as factors}
+}
+\description{
+Function to plot
+}
+\details{
+
+}
+
