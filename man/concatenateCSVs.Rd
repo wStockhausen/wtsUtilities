@@ -1,0 +1,22 @@
+\name{concatenateCSVs}
+\alias{concatenateCSVs}
+\title{Concatenate csv files into one.}
+\usage{
+concatenateCSVs(caption = "Select csv files", out.csv = "test.csv",
+  out.dir = NULL)
+}
+\arguments{
+  \item{caption}{- caption for file dialog box}
+
+  \item{out.csv}{- filename of output csv file}
+
+  \item{out.dir}{- directory for output csv file}
+}
+\description{
+Function to concatenate a number of csv files (with
+identical column strucuture) into a single csv file.
+}
+\details{
+
+}
+
