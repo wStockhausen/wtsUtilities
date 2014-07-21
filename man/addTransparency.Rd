@@ -1,0 +1,21 @@
+\name{addTransparency}
+\alias{addTransparency}
+\title{Add transparency to a vector of colors}
+\usage{
+addTransparency(clrs, alpha = 1)
+}
+\arguments{
+  \item{clrs}{- vector of colors}
+
+  \item{alpha}{- level of transparency to add (0-1)}
+}
+\value{
+corresponding vector of colors with transparency added
+}
+\description{
+Function to add transparency to a vector of colors
+}
+\details{
+
+}
+
