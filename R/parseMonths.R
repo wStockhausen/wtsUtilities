@@ -21,7 +21,7 @@ parseMonths<-function(x,format='MM/DD/YYYY'){
         sep<-'-';
         xs<-strsplit(x,sep,fixed=TRUE);
         MONTH.ABB<-toupper(month.abb);
-        for (i in 1:length(r)) {r[i]<-which(toupper(xs[[i]][2])==MONTH.abb)[1];}
+        for (i in 1:length(r)) {r[i]<-which(toupper(xs[[i]][2])==MONTH.ABB)[1];}
     }    
     return(r)
 }
