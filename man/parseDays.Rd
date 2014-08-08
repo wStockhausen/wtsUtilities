@@ -2,7 +2,7 @@
 \alias{parseDays}
 \title{Convert character vector of dates to numeric vector of days-of-month.}
 \usage{
-parseDays(x, format = "MM/DD/YYYY", sep = "/")
+parseDays(x, format = "MM/DD/YYYY")
 }
 \arguments{
   \item{x}{- the character vector to convert}

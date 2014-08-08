@@ -10,7 +10,7 @@
 #'
 #'@export
 #'
-parseDays<-function(x,format='MM/DD/YYYY',sep='/'){
+parseDays<-function(x,format='MM/DD/YYYY'){
     r<-vector('numeric',length=length(x));
     if (toupper(format)=='MM/DD/YYYY'){
         sep<-'/';
