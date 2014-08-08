@@ -4,24 +4,24 @@
 #'@title Function to convert a character vector of dates to a numeric vector of months.
 #'
 #'@param x - the character vector to convert
-#'@param format - the date format (e.g. 'MM/DD/YYYY') 
-#'@param sep - the date-month-yar divider (e.g. '/')
+#'@param format - the date format (e.g. 'MM/DD/YYYY','DD-MON-YYYY') 
 #'
 #'@return numeric vector of months (1-12)
 #'
 #'@export
 #'
-parseMonths<-function(x,format='MM/DD/YYYY',sep='/'){
-    frmt<-strsplit(toupper(format),sep,fixed=TRUE)
-    ctr<-0;
-    for (f in frmt[[1]]){
-        ctr<-ctr+1;
-        if (f=='MM') {break;}
-    }
-    
+parseMonths<-function(x,format='MM/DD/YYYY'){
     r<-vector('numeric',length=length(x));
-    xs<-strsplit(x,sep,fixed=TRUE);
-    for (i in 1:length(r)) {r[i]<-as.numeric(xs[[i]][ctr]);}
-    
+    if (toupper(format)=='MM/DD/YYYY'){
+        sep<-'/';
+        xs<-strsplit(x,sep,fixed=TRUE);
+        for (i in 1:length(r)) {r[i]<-as.numeric(xs[[i]][1]);}
+    } else
+    if (any(toupper(format)==c('DD-MON-YYYY','DD-MON-YY'))){
+        sep<-'-';
+        xs<-strsplit(x,sep,fixed=TRUE);
+        MONTH.ABB<-toupper(month.abb);
+        for (i in 1:length(r)) {r[i]<-which(toupper(xs[[i]][2])==MONTH.abb)[1];}
+    }    
     return(r)
 }
