@@ -23,8 +23,9 @@
 #'
 #'@return a function reflecting a color scale.
 #'
-#'@export
 #'@import graphics
+#'
+#'@export
 #'
 #require(graphics);
 #source("../Plots/createColorPalette.R",chdir=TRUE);
