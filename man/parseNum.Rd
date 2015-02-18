@@ -2,15 +2,15 @@
 % Please edit documentation in R/TextFunctions.R
 \name{parseNum}
 \alias{parseNum}
-\title{Parse a number from a character string vector.}
+\title{Parse a numeric expression from a character string.}
 \usage{
 parseNum(str)
 }
 \arguments{
-\item{str}{- character vector to parse}
+\item{str}{- character string to parse}
 }
 \value{
-parsed numerical value
+parsed and evaluated numerical expression
 }
 \description{
 

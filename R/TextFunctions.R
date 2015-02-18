@@ -28,18 +28,20 @@ stripComments<-function(strv,comment='#'){
 }#stripComments
 
 #'
-#'@title Parse a number from a character string vector.
+#'@title Parse a numeric expression from a character string.
 #'
-#'@title Function to parse a number from a character string vector.
+#'@title Function to parse a numeric expression from a character string.
 #'
-#'@param str - character vector to parse
+#'@param str - character string to parse
 #'
-#'@return parsed numerical value
+#'@return parsed and evaluated numerical expression
 #'
 #'@export
 #'
 parseNum<-function(str){
-    return(as.numeric(str));
+    expr<-parse(text=paste('tmp<-',str[1]))
+    eval(expr);
+    return(tmp);
 }
 
 #'
