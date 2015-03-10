@@ -21,15 +21,31 @@ concatenateCSVs<-function(caption="Select csv files",
         if (!is.null(in.csvs[1])) {out.dir<-dirname(file.path(in.csvs[1]));}
     }
     
-    ctr<-0;
+#     ctr<-0;
+#     for (in.csv in in.csvs){
+#         dfrp<-getCSV(csvfile=in.csv);
+#         if (ctr==0){
+#             dfr<-dfrp;
+#         } else {
+#             dfr<-rbind(dfr,dfrp)
+#         }
+#         ctr<-ctr+1;
+#     }
+#     write.csv(dfr,file=file.path(out.dir,out.csv),row.names=FALSE,quote=FALSE,na='')
+
+    out<-file(file.path(out.dir,out.csv),open='w')
+    inclHdr<-TRUE;
     for (in.csv in in.csvs){
-        dfrp<-getCSV(csvfile=in.csv);
-        if (ctr==0){
-            dfr<-dfrp;
+        conn<-file(in.csv,open='r');
+        lines<-readLines(con=conn);
+        nl<-length(lines);
+        if (inclHdr){
+            writeLines(lines,con=out);
+            inclHdr<-FALSE;
         } else {
-            dfr<-rbind(dfr,dfrp)
+            writeLines(lines[2:nl],con=out);
         }
-        ctr<-ctr+1;
+        close(conn);
     }
-    write.csv(dfr,file=file.path(out.dir,out.csv),row.names=FALSE,quote=FALSE,na='')
+    close(out);
 }
