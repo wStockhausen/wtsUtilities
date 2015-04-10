@@ -4,16 +4,18 @@
 \alias{selectFile}
 \title{Select a file.}
 \usage{
-selectFile(ext = "*", caption = paste("Select .", ext, " file to import",
-  sep = ""))
+selectFile(ext = "*", caption = paste("Select .", ext, " file(s) to import",
+  sep = "", multi = FALSE))
 }
 \arguments{
 \item{ext}{- extension for files to choose from}
 
 \item{caption}{- caption for file dialog (if file name not provided)}
+
+\item{multi}{- flag (T/F) to allow multiple file selection}
 }
 \value{
-Selected file name. Returns NULL if the user canceled selection using the file dialog.
+Selected file name(s). Returns NULL if the user canceled selection using the file dialog.
 }
 \description{
 Function allows the user to select a file using a gui interface.

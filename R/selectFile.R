@@ -4,17 +4,18 @@
 #' 
 #' @param ext - extension for files to choose from
 #' @param caption - caption for file dialog (if file name not provided)
+#' @param multi - flag (T/F) to allow multiple file selection
 #' 
-#' @return Selected file name. Returns NULL if the user canceled selection using the file dialog.
+#' @return Selected file name(s). Returns NULL if the user canceled selection using the file dialog.
 #' 
 #' @importFrom tcltk tk_choose.files
 #' 
 #' @export
 #' 
-selectFile<-function(ext='*',caption=paste("Select .",ext," file to import",sep='')){
+selectFile<-function(ext='*',caption=paste("Select .",ext," file(s) to import",sep='',multi=FALSE)){
     Filters<-addFilter(ext,paste(ext,"files (*.",ext,")",sep=''),paste("*.",ext,sep=''));
     file<-tcltk::tk_choose.files(caption=caption,
-                             multi=FALSE,filters=matrix(Filters[ext,],1,2,byrow=TRUE));
+                                multi=multi,filters=matrix(Filters[ext,],1,2,byrow=TRUE));
     if (length(file)==0) return(NULL);
     return(file)
 }

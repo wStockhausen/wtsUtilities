@@ -5,7 +5,7 @@
 \title{Concatenate csv files into one.}
 \usage{
 concatenateCSVs(caption = "Select csv files", out.csv = "test.csv",
-  out.dir = NULL)
+  out.dir = NULL, method = "writeLines")
 }
 \arguments{
 \item{caption}{- caption for file dialog box}
@@ -13,6 +13,8 @@ concatenateCSVs(caption = "Select csv files", out.csv = "test.csv",
 \item{out.csv}{- filename of output csv file}
 
 \item{out.dir}{- directory for output csv file}
+
+\item{method}{- specifies method used for concatenation ('writeLines' or 'write.table')}
 }
 \description{
 Function to concatenate a number of csv files (with identical column strucuture)
