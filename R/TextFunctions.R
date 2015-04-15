@@ -23,7 +23,7 @@ stripComments<-function(strv,comment='#'){
     for (i in 1:length(ivp)){
         if (ivp[i]>1) strvp[i]<-substr(strvp[i],1,ivp[i]-1);
     }
-    idx<-!(strvp=='');
+    idx<-!(gsub(' ','',strvp,fixed=TRUE)=='');#find white space-only lines
     return(strvp[idx])
 }#stripComments
 

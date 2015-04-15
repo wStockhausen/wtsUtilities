@@ -12,7 +12,7 @@
 #' 
 #' @export
 #' 
-selectFile<-function(ext='*',caption=paste("Select .",ext," file(s) to import",sep='',multi=FALSE)){
+selectFile<-function(ext='*',caption=paste("Select .",ext," file(s) to import",sep=''),multi=FALSE){
     Filters<-addFilter(ext,paste(ext,"files (*.",ext,")",sep=''),paste("*.",ext,sep=''));
     file<-tcltk::tk_choose.files(caption=caption,
                                 multi=multi,filters=matrix(Filters[ext,],1,2,byrow=TRUE));

@@ -8,7 +8,7 @@
 #'@param strv - chracter vector to parse
 #'@param qt - the character indicating quotation (' or ")
 #'@param keepQuotes - flag to keep the quotation marks in the output (does nothing)
-#'@param removeComments - flag to remove comments prior to parsing
+#'@param stripComments - flag to remove comments prior to parsing
 #'@param comment - character used to indicate the start of a comment
 #'
 #'@return numbered list, with elements corresponding to the equivalent vector element in strv

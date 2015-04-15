@@ -5,7 +5,7 @@
 \title{Select a file.}
 \usage{
 selectFile(ext = "*", caption = paste("Select .", ext, " file(s) to import",
-  sep = "", multi = FALSE))
+  sep = ""), multi = FALSE)
 }
 \arguments{
 \item{ext}{- extension for files to choose from}

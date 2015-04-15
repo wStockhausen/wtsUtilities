@@ -15,9 +15,9 @@ parseText(strv, qt = "'", keepQuotes = FALSE, stripComments = TRUE,
 
 \item{keepQuotes}{- flag to keep the quotation marks in the output (does nothing)}
 
-\item{comment}{- character used to indicate the start of a comment}
+\item{stripComments}{- flag to remove comments prior to parsing}
 
-\item{removeComments}{- flag to remove comments prior to parsing}
+\item{comment}{- character used to indicate the start of a comment}
 }
 \value{
 numbered list, with elements corresponding to the equivalent vector element in strv
