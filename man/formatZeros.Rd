@@ -7,7 +7,7 @@
 formatZeros(x, width = 2, format = "d", ...)
 }
 \arguments{
-\item{x}{- numeric vector}
+\item{x}{- object that can be coerced to a numeric vector using as.numeric(as.vector(x))}
 
 \item{width}{- width of formatted numbers}
 
