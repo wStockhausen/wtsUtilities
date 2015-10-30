@@ -2,11 +2,20 @@
 % Please edit documentation in R/standardize.R
 \name{standardize}
 \alias{standardize}
-\title{}
+\title{Standardize a vector by converting to z-scores.}
 \usage{
 standardize(x)
 }
+\arguments{
+\item{x}{- vector to standardize}
+}
+\value{
+standardized vector as z-scores (same size as x)
+}
 \description{
+Function to standardize a vector by converting to z-scores.
+}
+\details{
 
 }
 
