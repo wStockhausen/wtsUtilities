@@ -2,18 +2,20 @@
 % Please edit documentation in R/standardize.R
 \name{standardize}
 \alias{standardize}
-\title{Standardize a vector by converting to z-scores.}
+\title{Standardize a vector or columns in a dataframe by converting to z-scores.}
 \usage{
-standardize(x)
+standardize(x, cols = NULL)
 }
 \arguments{
-\item{x}{- vector to standardize}
+\item{x}{- vector or dataframe to standardize}
+
+\item{cols}{- vector of column names to standardize (if x is a dataframe)}
 }
 \value{
-standardized vector as z-scores (same size as x)
+standardized vector as z-scores (same size as x), or dataframe
 }
 \description{
-Function to standardize a vector by converting to z-scores.
+Function to standardize a vector or columns in a dataframe by converting to z-scores.
 }
 \details{
 

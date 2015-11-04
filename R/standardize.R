@@ -1,21 +1,42 @@
 #'
+#'@title Standardize a vector or columns in a dataframe by converting to z-scores.
+#'
+#'@description Function to standardize a vector or columns in a dataframe by converting to z-scores.
+#'
+#'@param x - vector or dataframe to standardize
+#'@param cols - vector of column names to standardize (if x is a dataframe)
+#'
+#'@return standardized vector as z-scores (same size as x), or dataframe
+#'
+#'@export
+#'
+standardize<-function(x,cols=NULL){
+  xp<-x;
+  if (is.data.frame(xp)) {
+      for (col in cols) xp[[col]]<-standardize.vector(xp[[col]]);
+  } else {
+      return(standardize.vector(xp));
+  }
+  return(xp);
+}
+#'
 #'@title Standardize a vector by converting to z-scores.
 #'
-#'@description Function to standardize a vector by converting to z-scores.
+#'@description Function to standardize a vectorby converting to z-scores.
 #'
 #'@param x - vector to standardize
 #'
 #'@return standardized vector as z-scores (same size as x)
 #'
-#'@export
+#'not exported
 #'
-standardize<-function(x){
-    mn<-mean(x,na.rm=TRUE);
-    sd<-sd(x,na.rm=TRUE);
-    if(sd>0){
-        y<-(x-mn)/sd;
-    } else {
-        y<-0*x;
-    }
-    return(y)
+standardize.vector<-function(x){
+  mn<-mean(x,na.rm=TRUE);
+  sd<-sd(x,na.rm=TRUE);
+  if(sd>0){
+      y<-(x-mn)/sd;
+  } else {
+      y<-0*x;
+  }
+  return(y);
 }
