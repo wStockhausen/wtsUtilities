@@ -1,15 +1,17 @@
 #'
-#'@title Compute the root median square of a vector 
+#'@title Compute the root median square deviation (rmsd) of a vector 
 #'
-#'@description Function to compute the root median square of a vector
+#'@description Function to compute the root median square deviation (rmsd) of a vector
 #'
-#'@param y - vector to compute rmds for
+#'@param y - vector to compute rmsd for
+#'@param na.rm - flag to remove NAs before calculating
 #'
-#'@return the rmds
+#'@return the rmsd, or NA if y is all NAs 
 #'
 #'@export
 #'
-rootMedianSquare<-function(y){
-  x<-y-median(y);
-  return(sqrt(sum(x*x)/length(x)));
+rootMedianSquare<-function(y,na.rm=TRUE){
+  x<-y-median(y,na.rm=na.rm);
+  if (length(x)>0) return(sqrt(sum(x*x)/length(x)));
+  return(NA);
 }

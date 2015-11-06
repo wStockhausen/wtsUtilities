@@ -2,18 +2,20 @@
 % Please edit documentation in R/rootMedianSquare.R
 \name{rootMedianSquare}
 \alias{rootMedianSquare}
-\title{Compute the root median square of a vector}
+\title{Compute the root median square deviation (rmsd) of a vector}
 \usage{
-rootMedianSquare(y)
+rootMedianSquare(y, na.rm = TRUE)
 }
 \arguments{
-\item{y}{- vector to compute rmds for}
+\item{y}{- vector to compute rmsd for}
+
+\item{na.rm}{- flag to remove NAs before calculating}
 }
 \value{
-the rmds
+the rmsd, or NA if y is all NAs
 }
 \description{
-Function to compute the root median square of a vector
+Function to compute the root median square deviation (rmsd) of a vector
 }
 \details{
 
