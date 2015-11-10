@@ -28,15 +28,19 @@ standardize<-function(x,cols=NULL){
 #'
 #'@return standardized vector as z-scores (same size as x)
 #'
+#'@details If sd(x) is 0, then 0*x is returned. If sd(x) is NA, then NA+x is returned.
+#'
 #'not exported
 #'
 standardize.vector<-function(x){
-  mn<-mean(x,na.rm=TRUE);
-  sd<-sd(x,na.rm=TRUE);
-  if(sd>0){
+    mn<-mean(x,na.rm=TRUE);
+    sd<-sd(x,na.rm=TRUE);
+    if(is.na(sd)){
+        y<-x+NA;##all NA's
+    } else if (sd==0){
+        y<-0*x;##all 0's
+    } else {
       y<-(x-mn)/sd;
-  } else {
-      y<-0*x;
   }
   return(y);
 }

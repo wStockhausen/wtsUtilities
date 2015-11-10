@@ -6,12 +6,12 @@
 #'@param y - vector to compute rmsd for
 #'@param na.rm - flag to remove NAs before calculating
 #'
-#'@return the rmsd, or NA if y is all NAs 
+#'@return the rmsd, or NA_real_ if y is all NAs 
 #'
 #'@export
 #'
 rootMedianSquare<-function(y,na.rm=TRUE){
   x<-y-median(y,na.rm=na.rm);
   if (length(x)>0) return(sqrt(sum(x*x)/length(x)));
-  return(NA);
+  return(NA_real_);
 }

@@ -12,7 +12,7 @@ rootMedianSquare(y, na.rm = TRUE)
 \item{na.rm}{- flag to remove NAs before calculating}
 }
 \value{
-the rmsd, or NA if y is all NAs
+the rmsd, or NA_real_ if y is all NAs
 }
 \description{
 Function to compute the root median square deviation (rmsd) of a vector
