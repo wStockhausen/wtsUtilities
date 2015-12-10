@@ -6,10 +6,11 @@ Date: 2015-12-10
 Author: William T. Stockhausen
 Maintainer: William T. Stockhausen <william.stockhausen@noaa.gov>
 Description: Collection of generic utility functions.
+License: MIT + file LICENSE
+Depends: R (>=3.2.1)
 Imports:
-    graphics,
-    grDevices,
-    tcltk,
-    sqldf
-License: MIT
+    graphics (>= 3.2.1),
+    grDevices (>= 3.2.1),
+    sqldf (>= 0.4-10),
+    tcltk (>= 3.2.1)
 RoxygenNote: 5.0.1
