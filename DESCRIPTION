@@ -1,12 +1,14 @@
 Package: wtsUtilities
 Type: Package
 Title: Collection of generic utility functions developed by W. Stockhausen.
-Version: 1.0.15
-Date: 2015-11-05
+Version: 1.0.16
+Date: 2015-12-10
 Author: William T. Stockhausen
 Maintainer: William T. Stockhausen <william.stockhausen@noaa.gov>
 Description: Collection of generic utility functions.
 Imports:
+    graphics,
+    grDevices,
     tcltk,
     sqldf
 License: MIT
