@@ -15,18 +15,18 @@
 selectFile<-function(ext='*',caption=paste("Select .",ext," file(s) to import",sep=''),multi=FALSE){
     if (ext==''){
         #this does NOT seem to work for files w/out extensions
-        file<-tcltk::tk_choose.files(caption=caption,multi=multi,
+        file<-tk_choose.files(caption=caption,multi=multi,
                                      filters=matrix(c("executables",""),1,2,byrow=TRUE));
     } else if (ext==' '){
         #this does NOT seem to work for files w/out extensions
-        file<-tcltk::tk_choose.files(caption=caption,multi=multi,
+        file<-tk_choose.files(caption=caption,multi=multi,
                                      filters=matrix(c("executables"," "),1,2,byrow=TRUE));
     } else if (ext=='*'){
-        file<-tcltk::tk_choose.files(caption=caption,multi=multi,
+        file<-tk_choose.files(caption=caption,multi=multi,
                                      filters=matrix(c("All","*"),1,2,byrow=TRUE));
     } else {
         Filters<-addFilter(ext,paste(ext,"files (*.",ext,")",sep=''),paste("*.",ext,sep=''));
-        file<-tcltk::tk_choose.files(caption=caption,multi=multi,
+        file<-tk_choose.files(caption=caption,multi=multi,
                                      filters=matrix(Filters[ext,],1,2,byrow=TRUE));
     }
     if (length(file)==0) return(NULL);

@@ -10,3 +10,4 @@ Imports:
     tcltk,
     sqldf
 License: MIT
+RoxygenNote: 5.0.1

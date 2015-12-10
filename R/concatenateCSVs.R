@@ -9,6 +9,8 @@
 #'@param out.dir - directory for output csv file
 #'@param method - specifies method used for concatenation ('writeLines' or 'write.table')
 #'
+#'@importFrom tcltk tk_choose.files
+#'
 #'@export
 #'
 concatenateCSVs<-function(caption="Select csv files",
