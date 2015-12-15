@@ -14,4 +14,7 @@ stripQuotes(str, qt = "'")
 \value{
 character vector w/ quotes stripped out
 }
+\description{
+Function to strip quotes from a character string vector.
+}
 

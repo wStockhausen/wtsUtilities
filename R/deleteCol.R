@@ -1,5 +1,7 @@
 #' @title Delete column in a dataframe or matrix
 #' 
+#' @description Function to delete column in a dataframe or matrix
+#' 
 #' @param tbl - dataframe or matrix from which to delete column
 #' @param col - name of column to delete
 #' 

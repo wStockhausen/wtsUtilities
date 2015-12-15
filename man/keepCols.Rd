@@ -2,11 +2,7 @@
 % Please edit documentation in R/keepCols.R
 \name{keepCols}
 \alias{keepCols}
-\title{keepCols: keep columns from a dataframe
-
- @description
-      Create dataframe with subset of columns of input dataframe "tbl" by
-      keeping only columns matching the specified names.}
+\title{Keep columns from a dataframe}
 \usage{
 keepCols(tbl, cols, debug = FALSE)
 }
@@ -19,5 +15,12 @@ keepCols(tbl, cols, debug = FALSE)
 }
 \value{
 a dataframe with columns to be kept, or NULL if no column names matched.
+}
+\description{
+Function to keep columns from a dataframe
+}
+\details{
+Creates a dataframe containing the specified subset of columns of input dataframe "tbl" by
+      keeping only columns matching the specified names.
 }
 

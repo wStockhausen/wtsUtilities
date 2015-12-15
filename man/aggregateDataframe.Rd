@@ -19,4 +19,7 @@ dataframe with vars aggregated by levels of "factor" columns
 \description{
 Function to aggregate a dataframe according to "factor" levels.
 }
+\details{
+Uses sqldf.
+}
 

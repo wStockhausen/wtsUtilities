@@ -30,7 +30,7 @@ stripComments<-function(strv,comment='#'){
 #'
 #'@title Parse numeric expressions from a character vector.
 #'
-#'@title Function to parse numeric expressions from a character vector.
+#'@description Function to parse numeric expressions from a character vector.
 #'
 #'@param str - character vector to parse
 #'
@@ -52,7 +52,7 @@ parseNum<-function(str){
 #'
 #'@title Add quotes to a character string vector.
 #'
-#'@title Function to add quotes to a character string vector.
+#'@description Function to add quotes to a character string vector.
 #'
 #'@param str - character vector to add quotes to
 #'@param qt - quote character
@@ -68,7 +68,7 @@ addQuotes<-function(str,qt="'"){
 #'
 #'@title Strip quotes from a character string vector.
 #'
-#'@title Function to strip quotes from a character string vector.
+#'@description Function to strip quotes from a character string vector.
 #'
 #'@param str - character vector to strip quotes from
 #'@param qt - quote character

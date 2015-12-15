@@ -36,7 +36,6 @@ createColorPalette<-function(name,
                              alpha=1,
                              start=0,
                              end=max(1,n-1)/n,
-                             gamma=1,
                              s=1,
                              v=1,
                              bias=1,
@@ -46,7 +45,7 @@ createColorPalette<-function(name,
                              showAsWheel=FALSE,
                              showAsBar=FALSE) {
     if (name=="rainbow"){
-        pal<-rainbow(n,s=s,v=v,start=start,end=end,gamma=gamma,alpha=alpha);
+        pal<-rainbow(n,s=s,v=v,start=start,end=end,alpha=alpha);
     } else if (name=="heat") {
         pal<-heat.colors(n,alpha=alpha);
     } else if (name=="terrain") {

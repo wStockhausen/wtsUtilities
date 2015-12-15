@@ -14,4 +14,7 @@ deleteCol(tbl, col)
 \value{
 dataframe or matrix with column removed
 }
+\description{
+Function to delete column in a dataframe or matrix
+}
 

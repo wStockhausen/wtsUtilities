@@ -5,7 +5,7 @@
 \title{Create a color palette.}
 \usage{
 createColorPalette(name, n = 1, alpha = 1, start = 0, end = max(1, n -
-  1)/n, gamma = 1, s = 1, v = 1, bias = 1, space = c("rgb", "Lab"),
+  1)/n, s = 1, v = 1, bias = 1, space = c("rgb", "Lab"),
   interpolate = c("linear", "spline"), clrs = c("#00007F", "blue",
   "#007FFF", "cyan", "#7FFF7F", "yellow", "#FF7F00", "red", "#7F0000"),
   showAsWheel = FALSE, showAsBar = FALSE)

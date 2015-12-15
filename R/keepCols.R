@@ -1,8 +1,10 @@
 #'
-#' @title keepCols: keep columns from a dataframe
+#' @title Keep columns from a dataframe
+#'
+#' @description Function to keep columns from a dataframe
 #' 
-#'  @description
-#'       Create dataframe with subset of columns of input dataframe "tbl" by
+#' @details
+#'       Creates a dataframe containing the specified subset of columns of input dataframe "tbl" by
 #'       keeping only columns matching the specified names.
 #' 
 #' @param  tbl  - dataframe with columns to keep or discard

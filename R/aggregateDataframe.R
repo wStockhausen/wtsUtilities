@@ -9,7 +9,9 @@
 #'
 #'@return dataframe with vars aggregated by levels of "factor" columns
 #'
-#'@import sqldf
+#'@details Uses sqldf.
+#'
+#'@importFrom sqldf sqldf
 #'
 #'@export
 #'

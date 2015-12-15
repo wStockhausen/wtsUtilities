@@ -1,7 +1,7 @@
 #'
 #'@title Convert character vector of dates to numeric vector of months.
 #'
-#'@title Function to convert a character vector of dates to a numeric vector of months.
+#'@description Function to convert a character vector of dates to a numeric vector of months.
 #'
 #'@param x - the character vector to convert
 #'@param format - the date format (e.g. 'MM/DD/YYYY','DD-MON-YYYY') 

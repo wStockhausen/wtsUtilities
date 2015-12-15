@@ -14,4 +14,7 @@ parseDays(x, format = "MM/DD/YYYY")
 \value{
 numeric vector of day of month (1-31)
 }
+\description{
+Function to convert a character vector of dates to a numeric vector of days-of-month.
+}
 
