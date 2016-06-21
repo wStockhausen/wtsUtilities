@@ -2,7 +2,7 @@
 % Please edit documentation in R/selectFile.R
 \name{selectFile}
 \alias{selectFile}
-\title{Select a file.}
+\title{Select a file}
 \usage{
 selectFile(ext = "*", caption = paste("Select .", ext, " file(s) to import",
   sep = ""), multi = FALSE)
@@ -19,5 +19,8 @@ Selected file name(s). Returns NULL if the user canceled selection using the fil
 }
 \description{
 Function allows the user to select a file using a gui interface.
+}
+\details{
+Uses \code{tcltk::tk_choose.files} to select file(s).
 }
 
