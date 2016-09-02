@@ -1,4 +1,4 @@
-#' @title Select a file.
+#' @title Select a file
 #'  
 #' @description Function allows the user to select a file using a gui interface.
 #' 
@@ -8,25 +8,25 @@
 #' 
 #' @return Selected file name(s). Returns NULL if the user canceled selection using the file dialog.
 #' 
-#' @importFrom tcltk tk_choose.files
+#' @details Uses \code{tcltk::tk_choose.files} to select file(s).
 #' 
 #' @export
 #' 
 selectFile<-function(ext='*',caption=paste("Select .",ext," file(s) to import",sep=''),multi=FALSE){
     if (ext==''){
         #this does NOT seem to work for files w/out extensions
-        file<-tk_choose.files(caption=caption,multi=multi,
+        file<-tcltk::tk_choose.files(caption=caption,multi=multi,
                                      filters=matrix(c("executables",""),1,2,byrow=TRUE));
     } else if (ext==' '){
         #this does NOT seem to work for files w/out extensions
-        file<-tk_choose.files(caption=caption,multi=multi,
+        file<-tcltk::tk_choose.files(caption=caption,multi=multi,
                                      filters=matrix(c("executables"," "),1,2,byrow=TRUE));
     } else if (ext=='*'){
-        file<-tk_choose.files(caption=caption,multi=multi,
+        file<-tcltk::tk_choose.files(caption=caption,multi=multi,
                                      filters=matrix(c("All","*"),1,2,byrow=TRUE));
     } else {
         Filters<-addFilter(ext,paste(ext,"files (*.",ext,")",sep=''),paste("*.",ext,sep=''));
-        file<-tk_choose.files(caption=caption,multi=multi,
+        file<-tcltk::tk_choose.files(caption=caption,multi=multi,
                                      filters=matrix(Filters[ext,],1,2,byrow=TRUE));
     }
     if (length(file)==0) return(NULL);
