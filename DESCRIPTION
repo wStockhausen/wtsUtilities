@@ -1,8 +1,8 @@
 Package: wtsUtilities
 Type: Package
 Title: Collection of generic utility functions developed by William Stockhausen
-Version: 2016.09.02
-Date: 2016-09-02
+Version: 2016.09.09
+Date: 2016-09-09
 Author: William T. Stockhausen
 Maintainer: William T. Stockhausen <william.stockhausen@noaa.gov>
 Description: Collection of generic utility functions.

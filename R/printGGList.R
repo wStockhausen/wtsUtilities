@@ -40,7 +40,7 @@ printGGList<-function(plots,figno=NULL,cap=NULL,show=TRUE){
         caps<-names(plots);
         for (p in 1:length(plots)){
             plot<-plots[[p]];
-            res<-printGGList(plot,figno=figno,cap=caps[p]);
+            res<-printGGList(plot,figno=figno,cap=caps[p],show=show);
             figno<-res$figno;
             plotlist<-c(plotlist,res$plotlist);
         }
