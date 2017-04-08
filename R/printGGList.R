@@ -15,7 +15,7 @@
 #'} 
 #'
 #'@details Captions for each figure are taken from the name of the list element associated with the plot.
-#'\code{figno} is substituted for '&&fno' in the caption and incremented for the next plot.
+#'\code{figno} is substituted for '&&fno' or '&&figno' in the caption and incremented for the next plot.
 #'
 #'@import ggplot2
 #'
@@ -27,6 +27,7 @@ printGGList<-function(plots,figno=NULL,cap=NULL,show=TRUE){
         #plots is a ggplot object
         if (!is.null(figno)) {
             cap<-gsub("&&fno",figno,cap);
+            cap<-gsub("&&figno",figno,cap);
             figno<-figno+1;
         }
         if (show) {
