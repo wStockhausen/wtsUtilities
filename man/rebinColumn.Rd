@@ -22,4 +22,3 @@ list with rebinned dataframe ('tbl'), bins ('bins'), and cutpts ('cutpts') as el
 \description{
 Rebin a column in a dataframe based on a vector of cutpoints
 }
-

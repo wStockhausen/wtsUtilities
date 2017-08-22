@@ -27,6 +27,5 @@ Function to print a ggplot2 object or a list of ggplot2 objects.
 }
 \details{
 Captions for each figure are taken from the name of the list element associated with the plot.
-\code{figno} is substituted for '&&fno' in the caption and incremented for the next plot.
+\code{figno} is substituted for '&&fno' or '&&figno' in the caption and incremented for the next plot.
 }
-

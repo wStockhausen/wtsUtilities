@@ -24,4 +24,3 @@ Rownames correspond to column (or row) names of original matrix.
 \description{
 Returns count, mean, stdev, and cv of vector, matrix or dataframe
 }
-

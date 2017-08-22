@@ -23,4 +23,3 @@ as the original if the latter had elements that were only comments or 'blank' el
 Thus, one use of this function could be to remove blank lines, comment-only lines, and
 commented text from a character vector created by reading a text file using readLines().
 }
-

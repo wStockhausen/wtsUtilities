@@ -20,4 +20,3 @@ Function to sum array by specified dimensions.
 \details{
 Uses the \code{apply} function to sum over the requested dimension.
 }
-

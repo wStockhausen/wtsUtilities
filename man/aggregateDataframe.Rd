@@ -22,4 +22,3 @@ Function to aggregate a dataframe according to "factor" levels.
 \details{
 Uses sqldf.
 }
-

@@ -18,4 +18,3 @@ computeStats.matrix(x, byCol = TRUE)
 \description{
 Returns count, mean, stdev, and cv of the rows or columns of a matrix
 }
-

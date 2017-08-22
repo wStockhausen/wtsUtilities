@@ -21,4 +21,3 @@ character vector with blanks replaced by zeros
 \description{
 Format input vector, replacing leading or trailing blanks with zeros.
 }
-

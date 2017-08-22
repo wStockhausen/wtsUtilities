@@ -19,4 +19,3 @@ computeStats.dataframe(x, cols.factors = 1, cols.vars = 2)
 \description{
 Returns count, mean, stdev, and cv of a dataframe
 }
-

@@ -15,4 +15,3 @@ computeTickInterval(rng, nticks = 5)
 Function to calculate nice tick intervals for a scale
 based on a range and the desired number of ticks.
 }
-

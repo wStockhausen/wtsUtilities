@@ -15,4 +15,3 @@ number of non-NAs in x
 \description{
 Returns count of x (ignoring NAs)
 }
-

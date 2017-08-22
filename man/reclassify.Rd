@@ -22,4 +22,3 @@ Function to reclassify values in a vector
 where the value "new" is the new classification assigned to each element in "x" 
 that is found in the vector "old".
 }
-

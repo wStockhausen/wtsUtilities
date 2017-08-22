@@ -23,4 +23,3 @@ augmented Filters matrix
 Add a filter to the file extension matrix 
 (if it's not there already) used in file dialogs.
 }
-

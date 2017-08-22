@@ -14,4 +14,3 @@ pause(t, debug = FALSE)
 \description{
 Runs a loop that causes the system to pause operation for 't' seconds
 }
-

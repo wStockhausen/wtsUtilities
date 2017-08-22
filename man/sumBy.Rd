@@ -28,4 +28,3 @@ Sums variables in a dataframe by a set of factor levels.
 Uses \code{getFactorLevels} to identify the unique factor combinations in columns
 identified as factors.
 }
-

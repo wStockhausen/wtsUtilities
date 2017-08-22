@@ -20,4 +20,3 @@ Assumes interval limits are midway between coordinates in xs. First
 and last coordinates assume same widths as first and last cells. Resulting vector
 has nx+1 values, if xs has nx values.
 }
-

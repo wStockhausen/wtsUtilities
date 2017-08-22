@@ -51,4 +51,3 @@ Palettes can created based on arbitrary base palettes by specifying name as 'ram
 of colors to use as the base palette (via clrs). This appraoch uses the grpahics function "colorRampPalette" 
 to create the palette.
 }
-

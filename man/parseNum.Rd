@@ -15,4 +15,3 @@ parsed and evaluated numerical expressions as a vector
 \description{
 Function to parse numeric expressions from a character vector.
 }
-

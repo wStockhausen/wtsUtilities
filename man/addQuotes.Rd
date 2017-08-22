@@ -17,4 +17,3 @@ character vector w/ elements in quotes
 \description{
 Function to add quotes to a character string vector.
 }
-

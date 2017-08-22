@@ -15,4 +15,3 @@ function name as character string
 \description{
 Returns the name of the input function as a character string
 }
-

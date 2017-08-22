@@ -23,4 +23,3 @@ Function allows the user to select a file using a gui interface.
 \details{
 Uses \code{tcltk::tk_choose.files} to select file(s).
 }
-

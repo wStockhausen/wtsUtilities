@@ -34,4 +34,3 @@ dataframe of results with columns corresponding to factors and vars
 Function to compute results from an arbitrary function (fcn)
       on colunms in a dataframe, by a set of factor levels
 }
-

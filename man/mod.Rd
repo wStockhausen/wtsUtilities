@@ -18,4 +18,3 @@ the result x modulo y
 Calculates the modulus of two numbers using the equation
 z = x-y*floor(x/y)
 }
-

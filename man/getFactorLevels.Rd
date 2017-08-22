@@ -27,4 +27,3 @@ a dataframe containing each unique combination of factor levels in dfr
 Returns the unique combination of levels
   of the specified "factors" in a dataframe.
 }
-

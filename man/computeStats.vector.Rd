@@ -15,4 +15,3 @@ computeStats.vector(x)
 \description{
 Returns count, mean, stdev, and cv of vector x
 }
-

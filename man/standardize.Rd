@@ -17,4 +17,3 @@ standardized vector as z-scores (same size as x), or dataframe
 \description{
 Function to standardize a vector or columns in a dataframe by converting to z-scores.
 }
-

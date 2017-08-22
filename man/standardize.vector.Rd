@@ -20,4 +20,3 @@ If sd(x) is 0, then 0*x is returned. If sd(x) is NA, then NA+x is returned.
 
 not exported
 }
-

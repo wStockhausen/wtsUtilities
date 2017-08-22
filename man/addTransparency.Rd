@@ -17,4 +17,3 @@ corresponding vector of colors with transparency added
 \description{
 Function to add transparency to a vector of colors
 }
-

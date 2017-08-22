@@ -17,4 +17,3 @@ calcPercentNonzero(dfr, vars = NULL, factors = NULL)
 \description{
 Function to plot
 }
-

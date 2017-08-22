@@ -24,4 +24,3 @@ Function to get paths to all terminal list elements as a character vector.
 \details{
 None
 }
-

@@ -21,4 +21,3 @@ the trimmed dataframe
 \description{
 Trims rows from a dataframe based on a corresponding vector of "residuals".
 }
-

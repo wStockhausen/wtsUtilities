@@ -23,4 +23,3 @@ Function to keep columns from a dataframe
 Creates a dataframe containing the specified subset of columns of input dataframe "tbl" by
       keeping only columns matching the specified names.
 }
-

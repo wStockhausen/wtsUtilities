@@ -1,8 +1,8 @@
 Package: wtsUtilities
 Type: Package
 Title: Collection of generic utility functions developed by William Stockhausen
-Version: 2017.01.10
-Date: 2017-01-10
+Version: 2017.08.22
+Date: 2017-08-22
 Author: William T. Stockhausen
 Maintainer: William T. Stockhausen <william.stockhausen@noaa.gov>
 Description: Collection of generic utility functions.
@@ -14,4 +14,4 @@ Imports:
     sqldf (>= 0.4-10),
     tcltk (>= 3.2.1),
     ggplot2 (>= 2.1.0)
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1

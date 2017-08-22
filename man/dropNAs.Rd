@@ -18,4 +18,3 @@ dataframe without NAs in factor columns
 Removes all rows from a dataframe where the value in any column specified in "factors"
       contains an NA.
 }
-

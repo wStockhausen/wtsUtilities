@@ -41,4 +41,3 @@ Arbitrary scales can created by specifying NULL for 'name' (the default) and pro
 of colors to use to define the scale function. This uses the graphics function "colorRamp" to define
 the underlying color ramp used for the scale.
 }
-

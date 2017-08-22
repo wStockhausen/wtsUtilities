@@ -32,4 +32,3 @@ Each element in the returned list is a character vector whose elements consist o
 1) quoted text blocks and 2) unquoted text elements split by white space in the order they occur in the
 element of the character vector.
 }
-
