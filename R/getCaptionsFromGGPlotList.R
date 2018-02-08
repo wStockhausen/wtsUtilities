@@ -5,7 +5,9 @@
 #' 
 #' @param x - list of plots in printGGList format, with captions as list names
 #' 
-#' @details Uses \code{\stringr::str_trim} to trim leading and trailing whitespace.
+#' @details Uses \code{stringr::str_trim} to trim leading and trailing whitespace.
+#' 
+#' @return character vector with plot captions as elements
 #' 
 #' @export
 #' 

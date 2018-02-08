@@ -9,9 +9,12 @@ getCaptionsFromGGPlotList(plts)
 \arguments{
 \item{x}{- list of plots in printGGList format, with captions as list names}
 }
+\value{
+character vector with plot captions as elements
+}
 \description{
 Function to extract captions from list of plots in printGGList format.
 }
 \details{
-Uses \code{\stringr::str_trim} to trim leading and trailing whitespace.
+Uses \code{stringr::str_trim} to trim leading and trailing whitespace.
 }
