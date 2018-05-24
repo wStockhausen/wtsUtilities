@@ -8,6 +8,8 @@
 #'
 #'@return corresponding vector of colors with transparency added
 #'
+#'@details None.
+#'
 #'@importFrom grDevices col2rgb
 #'@importFrom grDevices rgb
 #'

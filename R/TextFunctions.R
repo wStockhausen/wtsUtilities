@@ -1,19 +1,19 @@
 #'
-#'@title Strip comments from elements of a character vector.
+#' @title Strip comments from elements of a character vector
 #'
-#'@description Function to strip comments from elements of a character vector.
+#' @description Function to strip comments from elements of a character vector.
 #'
-#'@param strv - character vector to strip comments from
-#'@param comment - character indicating remaining text is a comment
+#' @param strv - character vector to strip comments from
+#' @param comment - character indicating remaining text is a comment
 #'
-#'@return character vector with comments removed. 
+#' @return character vector with comments removed. 
 #'
-#'@details The returned character vector will not have the same number of elements
+#' @details The returned character vector will not have the same number of elements
 #'as the original if the latter had elements that were only comments or 'blank' elements.
 #'Thus, one use of this function could be to remove blank lines, comment-only lines, and
 #'commented text from a character vector created by reading a text file using readLines().
 #'
-#'@export
+#' @export
 #'
 stripComments<-function(strv,comment='#'){
     iv<-regexpr(paste('[',comment,']',sep=''),strv,fixed=FALSE)
@@ -35,6 +35,8 @@ stripComments<-function(strv,comment='#'){
 #'@param str - character vector to parse
 #'
 #'@return parsed and evaluated numerical expressions as a vector
+#'
+#'@details None.
 #'
 #'@export
 #'
@@ -59,6 +61,8 @@ parseNum<-function(str){
 #'
 #'@return character vector w/ elements in quotes
 #'
+#'@details None.
+#'
 #'@export
 #'
 addQuotes<-function(str,qt="'"){
@@ -74,6 +78,8 @@ addQuotes<-function(str,qt="'"){
 #'@param qt - quote character
 #'
 #'@return character vector w/ quotes stripped out
+#'
+#'@details None.
 #'
 #'@export
 #'

@@ -2,7 +2,7 @@
 % Please edit documentation in R/TextFunctions.R
 \name{stripComments}
 \alias{stripComments}
-\title{Strip comments from elements of a character vector.}
+\title{Strip comments from elements of a character vector}
 \usage{
 stripComments(strv, comment = "#")
 }
