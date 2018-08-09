@@ -4,8 +4,8 @@
 \alias{addFilter}
 \title{Add a file type to file extensions}
 \usage{
-addFilter(rowname = "csv", desc = "csv files (*.csv)", filter = "*.csv",
-  Filters = NULL)
+addFilter(rowname = "csv", desc = "csv files (*.csv)",
+  filter = "*.csv", Filters = NULL)
 }
 \arguments{
 \item{rowname}{- row name to add in filters matrix}

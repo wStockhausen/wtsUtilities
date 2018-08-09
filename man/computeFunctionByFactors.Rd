@@ -5,8 +5,8 @@
 \title{Compute results using an arbitrary function on columns in a dataframe, 
 by a set of factor levels}
 \usage{
-computeFunctionByFactors(df, fcn = "sum", factors = NULL, vars = NULL,
-  sortBy = NULL, ascending = TRUE, debug = FALSE)
+computeFunctionByFactors(df, fcn = "sum", factors = NULL,
+  vars = NULL, sortBy = NULL, ascending = TRUE, debug = FALSE)
 }
 \arguments{
 \item{df}{- dataframe (or object that can be cast to a dataframe) with variables and factors}

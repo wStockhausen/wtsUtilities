@@ -4,10 +4,10 @@
 \alias{createColorScale}
 \title{Create a function defining a color scale.}
 \usage{
-createColorScale(clrs = c("#00007F", "blue", "#007FFF", "cyan", "#7FFF7F",
-  "yellow", "#FF7F00", "red", "#7F0000"), name = NULL, bias = 1,
-  space = c("rgb", "Lab"), interpolate = c("linear", "spline"),
-  showAsWheel = FALSE, showAsBar = FALSE)
+createColorScale(clrs = c("#00007F", "blue", "#007FFF", "cyan",
+  "#7FFF7F", "yellow", "#FF7F00", "red", "#7F0000"), name = NULL,
+  bias = 1, space = c("rgb", "Lab"), interpolate = c("linear",
+  "spline"), showAsWheel = FALSE, showAsBar = FALSE)
 }
 \arguments{
 \item{clrs}{- vector of colors defining the base scale (ignored if 'name' is given)}

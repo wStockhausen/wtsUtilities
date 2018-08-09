@@ -4,8 +4,8 @@
 \alias{rebinColumn}
 \title{Rebin a column in dataframe}
 \usage{
-rebinColumn(tbl, column = "LENGTH", cutpts = 1:10, binType = c("L", "C",
-  "R"))
+rebinColumn(tbl, column = "LENGTH", cutpts = 1:10, binType = c("L",
+  "C", "R"))
 }
 \arguments{
 \item{tbl}{- dataframe to rebin}
