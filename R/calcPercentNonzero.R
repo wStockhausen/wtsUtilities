@@ -1,14 +1,19 @@
 #'
-#'@title Calculate percent non-zero occurrences from a set of dataframe columns, possibly
+#' @title Calculate percent non-zero occurrences from a set of dataframe columns, possibly
+#'by factor levels
+#'
+#' @description Function to calculate percent non-zero occurrences from a set of dataframe columns, possibly
 #'by factor levels.
 #'
-#'@description Function to plot
+#' @param dfr - dataframe with data in columns
+#' @param vars - vector of columns (names) on which to calculate percentages 
+#' @param factors - vector of columns to use as factors
 #'
-#'@param dfr - dataframe with data in columns
-#'@param vars - vector of columns (names) on which to calculate percentages 
-#'@param factors - vector of columns to use as factors
+#' @return a dataframe
 #'
-#'@export
+#' @details
+#'
+#' @export
 #'
 #source(file.path("../Utilities/sumBy.R"),chdir=TRUE);
 calcPercentNonzero<-function(dfr,

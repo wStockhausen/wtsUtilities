@@ -3,7 +3,7 @@
 \name{calcPercentNonzero}
 \alias{calcPercentNonzero}
 \title{Calculate percent non-zero occurrences from a set of dataframe columns, possibly
-by factor levels.}
+by factor levels}
 \usage{
 calcPercentNonzero(dfr, vars = NULL, factors = NULL)
 }
@@ -14,6 +14,13 @@ calcPercentNonzero(dfr, vars = NULL, factors = NULL)
 
 \item{factors}{- vector of columns to use as factors}
 }
+\value{
+a dataframe
+}
 \description{
-Function to plot
+Function to calculate percent non-zero occurrences from a set of dataframe columns, possibly
+by factor levels.
+}
+\details{
+
 }
