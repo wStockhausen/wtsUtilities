@@ -16,6 +16,8 @@
 #'       
 #'@return a dataframe of results with columns corresponding to factors and vars
 #'
+#'@details None.
+#'
 #'@export
 #'
 #source("../Utilities/getFactorLevels.R",chdir=TRUE);

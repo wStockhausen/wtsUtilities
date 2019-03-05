@@ -9,6 +9,8 @@
 #'
 #'@return result of lapply'ing function to X
 #'
+#'@details None.
+#'
 #'@export
 #'
 my.lapply<-function (X, FUN, ...) {

@@ -5,6 +5,8 @@
 #'
 #'@return Either 'MacOSX' or 'Windows'
 #'
+#'@details None.
+#'
 #'@export
 #'
 getOperatingSystem<-function(){

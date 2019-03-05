@@ -7,6 +7,8 @@
 #'@param rng - the nominal range for the scale [i.e., c(min,max)]
 #'@param nticks - the desired number of ticks
 #'
+#'@details None.
+#'
 #'@export
 #'
 computeTickInterval<-function(rng,nticks=5) {

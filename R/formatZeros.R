@@ -10,6 +10,8 @@
 #' 
 #' @return character vector with blanks replaced by zeros
 #'
+#'@details None.
+#'
 #'@export
 #'
 formatZeros<-function(x,width=2,format="d",...){

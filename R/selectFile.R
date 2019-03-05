@@ -12,7 +12,9 @@
 #' 
 #' @export
 #' 
-selectFile<-function(ext='*',caption=paste("Select .",ext," file(s) to import",sep=''),multi=FALSE){
+selectFile<-function(ext='*',
+                     caption=paste("Select .",ext," file(s) to import",sep=''),
+                     multi=FALSE){
     if (ext==''){
         #this does NOT seem to work for files w/out extensions
         file<-tcltk::tk_choose.files(caption=caption,multi=multi,

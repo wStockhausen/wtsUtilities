@@ -19,3 +19,6 @@ result of lapply'ing function to X
 \description{
 A convenience implementation of lapply
 }
+\details{
+None.
+}

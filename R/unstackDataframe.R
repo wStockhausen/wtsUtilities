@@ -13,6 +13,8 @@
 #' @param debug - flag (T/F) to print out debugging info
 #' 
 #' @return dataframe with unstacked columns and factor levels
+#' 
+#' @details None.
 #'
 #'@export
 #'

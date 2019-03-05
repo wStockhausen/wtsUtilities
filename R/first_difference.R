@@ -7,6 +7,8 @@
 #'
 #'@return the vector of first differences
 #'
+#'@details None.
+#'
 #'@export
 #'
 first_difference<-function(x){

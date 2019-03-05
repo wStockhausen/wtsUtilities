@@ -11,6 +11,8 @@
 #' @param debug     - flag (T/F) to print debugging info
 #' 
 #' @return sorted version of df
+#' 
+#' @details None.
 #'
 #'@export
 #'

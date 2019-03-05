@@ -8,6 +8,8 @@
 #'
 #'@return the rmsd, or NA_real_ if y is all NAs 
 #'
+#'@details None.
+#'
 #'@export
 #'
 rootMedianSquare<-function(y,na.rm=TRUE){

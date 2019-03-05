@@ -6,7 +6,7 @@
 keeping quoted text together in same element (with whitespace but without quotation marks).}
 \usage{
 parseText(strv, qt = "'", keepQuotes = FALSE, stripComments = TRUE,
-  comment = "#")
+  comment = "#", verbose = FALSE)
 }
 \arguments{
 \item{strv}{- chracter vector to parse}
@@ -18,6 +18,8 @@ parseText(strv, qt = "'", keepQuotes = FALSE, stripComments = TRUE,
 \item{stripComments}{- flag to remove comments prior to parsing}
 
 \item{comment}{- character used to indicate the start of a comment}
+
+\item{verbose}{- flag (T/F) to print diagnostic info}
 }
 \value{
 numbered list, with elements corresponding to the equivalent vector element in strv

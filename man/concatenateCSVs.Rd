@@ -20,3 +20,6 @@ concatenateCSVs(caption = "Select csv files", out.csv = "test.csv",
 Function to concatenate a number of csv files (with identical column strucuture)
 into a single csv file.
 }
+\details{
+None.
+}

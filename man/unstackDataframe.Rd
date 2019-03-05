@@ -27,3 +27,6 @@ Creates a new dataframe by "unstack"ing columns in the
   \code{getFactorLevels} to find the unique factor level combinations from
   the set of dataaframe columns identified as factors.
 }
+\details{
+None.
+}

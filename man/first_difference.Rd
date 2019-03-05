@@ -15,3 +15,6 @@ the vector of first differences
 \description{
 Function to calculate the first difference of a vector.
 }
+\details{
+None.
+}

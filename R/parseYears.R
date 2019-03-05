@@ -8,6 +8,8 @@
 #'
 #'@return numeric vector of months (1-12)
 #'
+#'@details None.
+#'
 #'@export
 #'
 parseYears<-function(x,format='MM/DD/YYYY'){

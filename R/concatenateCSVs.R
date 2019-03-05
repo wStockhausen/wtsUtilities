@@ -11,6 +11,8 @@
 #'
 #'@importFrom tcltk tk_choose.files
 #'
+#'@details None.
+#'
 #'@export
 #'
 concatenateCSVs<-function(caption="Select csv files",

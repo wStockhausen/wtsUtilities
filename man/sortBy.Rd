@@ -24,3 +24,6 @@ sorted version of df
 Returns a dataframe sorted by row according to the combination of values in
       the columns specified by "factors".
 }
+\details{
+None.
+}

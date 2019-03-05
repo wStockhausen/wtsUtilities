@@ -8,6 +8,8 @@
 #'
 #'@return numeric vector of day of month (1-31)
 #'
+#'@details None.
+#'
 #'@export
 #'
 parseDays<-function(x,format='MM/DD/YYYY'){

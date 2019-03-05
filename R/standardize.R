@@ -8,6 +8,8 @@
 #'
 #'@return standardized vector as z-scores (same size as x), or dataframe
 #'
+#'@details None.
+#'
 #'@export
 #'
 standardize<-function(x,cols=NULL){

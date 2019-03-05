@@ -10,6 +10,8 @@
 #'
 #'@return list with rebinned dataframe ('tbl'), bins ('bins'), and cutpts ('cutpts') as elements
 #'
+#'@details None.
+#'
 #'@export
 #'
 rebinColumn<-function(tbl,                     #input dataframe

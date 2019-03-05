@@ -12,3 +12,6 @@ Either 'MacOSX' or 'Windows'
 \description{
 Function that returns the operating system name.
 }
+\details{
+None.
+}
