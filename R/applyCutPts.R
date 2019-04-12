@@ -5,9 +5,10 @@
 #'
 #' @param zs - the vector to apply cutpoints to
 #' @param cutpts - vector of cutpoints
-#' @param truncate.low - vector of cutpoints
+#' @param truncate.low - flag to truncate below first cutpoint (i.e., cutpt[1]<-0)
+#' @param truncate.high - flag to truncate above last cutpoint (i.e., cutpt[last]<-Inf)
 #'
-#' @return a vector realigned to the cutpoints
+#' @return a vector with values aligned to the left cutpoints
 #'
 #' @details None.
 #'

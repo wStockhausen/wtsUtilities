@@ -12,10 +12,12 @@ applyCutPts(zs, cutpts = seq(from = 25, to = 185, by = 5),
 
 \item{cutpts}{- vector of cutpoints}
 
-\item{truncate.low}{- vector of cutpoints}
+\item{truncate.low}{- flag to truncate below first cutpoint (i.e., cutpt[1]<-0)}
+
+\item{truncate.high}{- flag to truncate above last cutpoint (i.e., cutpt[last]<-Inf)}
 }
 \value{
-a vector realigned to the cutpoints
+a vector with values aligned to the left cutpoints
 }
 \description{
 Function to determine bins by applying a vector of cutpoints.
