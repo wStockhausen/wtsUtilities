@@ -4,7 +4,8 @@
 \alias{addCumSums}
 \title{Add cumulative sums (standard and normalized) of a column to a dataframe by an index and set of factors}
 \usage{
-addCumSums(dfr, valCol, idxCol, factors = NULL, verbose = FALSE)
+addCumSums(dfr, valCol, idxCol = NULL, factors = NULL,
+  verbose = FALSE)
 }
 \arguments{
 \item{dfr}{- dataframe (or object that can be coerced to a dataframe)
@@ -12,14 +13,14 @@ with values column to be cum-summed, index column, and factor levels}
 
 \item{valCol}{- name of values column to be cum-summed (as character string; e.g., "num")}
 
-\item{idxCol}{- name of "index" column to track cum-summing (as character string; e.g. "size")}
+\item{idxCol}{- name of "index" column to track cum-summing (as character string; e.g. "size", or NULL if none)}
 
 \item{factors}{- vector of names of columns in dfr to serve as factors in the summations (or NULL)}
 
 \item{verbose}{- flag (T/F) to print diagnostic information}
 }
 \value{
-a dataframe of results with columns corresponding to the factors, the index column, the values column,
+a dataframe of results with columns corresponding to the factors, the index column (if defined), the values column,
 a "nrmlzd" column, a "cumSum" column, and a "nrmSum" column. The latter three represent the normalized values 
 (summing to 1), the cumulative sum of the values, and the cumulative sum of the normalized values, where the 
 normalization and sums are taken over each factor combination and the associated index set.

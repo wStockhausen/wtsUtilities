@@ -4,12 +4,19 @@
 \alias{standardize}
 \title{Standardize a vector or columns in a dataframe by converting to z-scores.}
 \usage{
-standardize(x, cols = NULL)
+standardize(x, cols = NULL, factors = NULL, idxCols = NULL,
+  verbose = FALSE)
 }
 \arguments{
 \item{x}{- vector or dataframe to standardize}
 
 \item{cols}{- vector of column names to standardize (if x is a dataframe)}
+
+\item{factors}{- vector of column names used as factors to standardize by (if x is a dataframe), or NULL}
+
+\item{idxCols}{- vector of column names used as indices for standardized values, or NULL}
+
+\item{verbose}{- flag (T/F) to print diagnostic information}
 }
 \value{
 standardized vector as z-scores (same size as x), or dataframe
@@ -18,5 +25,5 @@ standardized vector as z-scores (same size as x), or dataframe
 Function to standardize a vector or columns in a dataframe by converting to z-scores.
 }
 \details{
-None.
+idxCols are just copied over from the relevant section of each combination of factor levels.
 }

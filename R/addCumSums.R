@@ -7,11 +7,11 @@
 #' @param dfr - dataframe (or object that can be coerced to a dataframe)
 #'              with values column to be cum-summed, index column, and factor levels
 #' @param valCol - name of values column to be cum-summed (as character string; e.g., "num")
-#' @param idxCol - name of "index" column to track cum-summing (as character string; e.g. "size")
+#' @param idxCol - name of "index" column to track cum-summing (as character string; e.g. "size", or NULL if none)
 #' @param factors - vector of names of columns in dfr to serve as factors in the summations (or NULL)
 #' @param verbose - flag (T/F) to print diagnostic information
 #'       
-#'@return a dataframe of results with columns corresponding to the factors, the index column, the values column,
+#'@return a dataframe of results with columns corresponding to the factors, the index column (if defined), the values column,
 #'a "nrmlzd" column, a "cumSum" column, and a "nrmSum" column. The latter three represent the normalized values 
 #'(summing to 1), the cumulative sum of the values, and the cumulative sum of the normalized values, where the 
 #'normalization and sums are taken over each factor combination and the associated index set. 
@@ -24,12 +24,12 @@
 #'
 addCumSums<-function(dfr,
                      valCol,
-                     idxCol,
+                     idxCol=NULL,
                      factors=NULL,
                      verbose=FALSE){
     if (!is.null(factors)){
         uFacs<-unique(dfr[,factors]);
-        facStr<-paste0(paste0("d.",factors,collapse=", "),",");
+        facStr<-paste0("d.",factors,collapse=", ");
         whrStr<-paste0(paste0("d.",factors,"=u.",factors),collapse=" AND \n");
     } else {
         facStr<-"";
@@ -46,12 +46,16 @@ addCumSums<-function(dfr,
         uFacs1<-uFacs[rw,];
         qry<-"select 
                 &&facStr
-                d.&&idxCol, d.&&valCol
+                &&idxCol, d.&&valCol
               from dfr d, uFacs1 u
               where &&whrStr
-              order by &&facStr d.&&idxCol;";
+              order by &&facStr &&idxCol;";
         qry<-gsub("&&facStr",facStr,qry,fixed=TRUE);
-        qry<-gsub("&&idxCol",idxCol,qry,fixed=TRUE);
+        if (is.null(idxCol)) {
+            qry<-gsub("&&idxCol","",qry,fixed=TRUE);
+        } else {
+            qry<-gsub("&&idxCol",paste0(",d.",idxCol),qry,fixed=TRUE);
+        }
         qry<-gsub("&&valCol",valCol,qry,fixed=TRUE);
         qry<-gsub("&&whrStr",whrStr,qry,fixed=TRUE);
         if (verbose) cat("qry:\n",qry,"\n");
