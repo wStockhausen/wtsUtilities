@@ -5,8 +5,14 @@
 \title{Parse text in character vector into individual elements by quotes and whitespace, 
 keeping quoted text together in same element (with whitespace but without quotation marks).}
 \usage{
-parseText(strv, qt = "'", keepQuotes = FALSE, stripComments = TRUE,
-  comment = "#", verbose = FALSE)
+parseText(
+  strv,
+  qt = "'",
+  keepQuotes = FALSE,
+  stripComments = TRUE,
+  comment = "#",
+  verbose = FALSE
+)
 }
 \arguments{
 \item{strv}{- chracter vector to parse}

@@ -4,8 +4,14 @@
 \alias{calcCIs}
 \title{Compute confidence intervals from cv's or standard deviations}
 \usage{
-calcCIs(vals, cvs = NULL, sdvs = NULL, pdfType = c("lognormal",
-  "normal"), ci = 0.95, verbose = FALSE)
+calcCIs(
+  vals,
+  cvs = NULL,
+  sdvs = NULL,
+  pdfType = c("lognormal", "normal"),
+  ci = 0.95,
+  verbose = FALSE
+)
 }
 \arguments{
 \item{vals}{- vector of values}

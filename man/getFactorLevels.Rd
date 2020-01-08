@@ -4,8 +4,14 @@
 \alias{getFactorLevels}
 \title{Find the unique combination of levels of a set of "factors" in a dataframe}
 \usage{
-getFactorLevels(dfr, factors, sortBy = NULL, ascending = TRUE,
-  orthogonal = FALSE, debug = FALSE)
+getFactorLevels(
+  dfr,
+  factors,
+  sortBy = NULL,
+  ascending = TRUE,
+  orthogonal = FALSE,
+  debug = FALSE
+)
 }
 \arguments{
 \item{dfr}{- input dataframe (or object that can be cast to a dataframe)}

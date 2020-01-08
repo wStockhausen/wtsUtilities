@@ -4,8 +4,7 @@
 \alias{standardize}
 \title{Standardize a vector or columns in a dataframe by converting to z-scores.}
 \usage{
-standardize(x, cols = NULL, factors = NULL, idxCols = NULL,
-  verbose = FALSE)
+standardize(x, cols = NULL, factors = NULL, idxCols = NULL, verbose = FALSE)
 }
 \arguments{
 \item{x}{- vector or dataframe to standardize}

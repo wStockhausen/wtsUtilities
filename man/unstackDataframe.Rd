@@ -4,8 +4,13 @@
 \alias{unstackDataframe}
 \title{Unstack columns in a dataframe by a set of factor levels}
 \usage{
-unstackDataframe(dfr, unstackCols = NULL, factorCols = NULL,
-  dropCols = NULL, debug = TRUE)
+unstackDataframe(
+  dfr,
+  unstackCols = NULL,
+  factorCols = NULL,
+  dropCols = NULL,
+  debug = TRUE
+)
 }
 \arguments{
 \item{dfr}{- the dataframe}

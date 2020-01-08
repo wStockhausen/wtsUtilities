@@ -15,4 +15,4 @@ Imports:
     tcltk (>= 3.2.1),
     ggplot2 (>= 2.1.0),
     stringr (>= 1.0.0)
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.2

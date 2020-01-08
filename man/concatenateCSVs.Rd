@@ -4,8 +4,12 @@
 \alias{concatenateCSVs}
 \title{Concatenate csv files into one.}
 \usage{
-concatenateCSVs(caption = "Select csv files", out.csv = "test.csv",
-  out.dir = NULL, method = "writeLines")
+concatenateCSVs(
+  caption = "Select csv files",
+  out.csv = "test.csv",
+  out.dir = NULL,
+  method = "writeLines"
+)
 }
 \arguments{
 \item{caption}{- caption for file dialog box}

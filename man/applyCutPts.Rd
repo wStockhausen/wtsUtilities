@@ -4,8 +4,12 @@
 \alias{applyCutPts}
 \title{Determine bins by applying a vector of cutpoints}
 \usage{
-applyCutPts(zs, cutpts = seq(from = 25, to = 185, by = 5),
-  truncate.low = TRUE, truncate.high = FALSE)
+applyCutPts(
+  zs,
+  cutpts = seq(from = 25, to = 185, by = 5),
+  truncate.low = TRUE,
+  truncate.high = FALSE
+)
 }
 \arguments{
 \item{zs}{- the vector to apply cutpoints to}

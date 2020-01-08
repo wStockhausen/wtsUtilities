@@ -4,8 +4,7 @@
 \alias{addCumSums}
 \title{Add cumulative sums (standard and normalized) of a column to a dataframe by an index and set of factors}
 \usage{
-addCumSums(dfr, valCol, idxCol = NULL, factors = NULL,
-  verbose = FALSE)
+addCumSums(dfr, valCol, idxCol = NULL, factors = NULL, verbose = FALSE)
 }
 \arguments{
 \item{dfr}{- dataframe (or object that can be coerced to a dataframe)
