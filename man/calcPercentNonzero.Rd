@@ -22,5 +22,5 @@ Function to calculate percent non-zero occurrences from a set of dataframe colum
 by factor levels.
 }
 \details{
-
+None.
 }

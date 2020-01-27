@@ -3,9 +3,9 @@
 #' 
 #' @description Function to "boxify" x,y vectors for a "boxy" xy plot.
 #' 
-#' @param x - 
-#' @param y - 
-#' @param dx
+#' @param x - vector to expand
+#' @param y - vector to expand
+#' @param dx - increment along x-axis 
 #' 
 #' @return dataframe with expanded elements x,y
 #' 

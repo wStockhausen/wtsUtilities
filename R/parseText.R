@@ -1,6 +1,6 @@
 #'
 #'@title Parse text in character vector into individual elements by quotes and whitespace, 
-#'keeping quoted text together in same element (with whitespace but without quotation marks).
+#'keeping quoted text together in same element (with whitespace but without quotation marks)
 #'
 #'@description Function to parse text in character vector into individual elements by quotes and whitespace, 
 #'keeping quoted text together in same element (with whitespace but without quotation marks).

@@ -1,5 +1,5 @@
 #'
-#'@title Create a function defining a color scale.
+#'@title Create a function defining a color scale
 #'
 #'@description Creates a function defining a color scale. The resulting function (e.g., 'scale') is used as \cr 
 #'\code{clr <- scale(x,mn=sclMin,mx=sclMax,alpha=alpha)} \cr 
@@ -18,12 +18,10 @@
 #''jet', 'coldhot', 'cold', and 'hot' \cr 
 #'Specifying a pre-defined name eliminates the need to specify the 'clrs' color vector. \cr 
 #'Arbitrary scales can created by specifying NULL for 'name' (the default) and providing a vector
-#'of colors to use to define the scale function. This uses the graphics function "colorRamp" to define
-#'the underlying color ramp used for the scale.
+#'of colors to use to define the scale function. This uses the grDevices package function "colorRamp" to define
+#'the underlying color ramp used for the scale. Uses packages \code{graphics} and \code{grDevices].}
 #'
 #'@return a function reflecting a color scale.
-#'
-#'@import graphics
 #'
 #'@export
 #'
@@ -57,7 +55,7 @@ createColorScale<-function(clrs=c("#00007F","blue", "#007FFF", "cyan","#7FFF7F",
           clrs<-rgb(reds,grns,blus)
         }
     }
-    rmp<-colorRamp(clrs,bias=bias,space=space,interpolate=interpolate);
+    rmp<-grDevices::colorRamp(clrs,bias=bias,space=space,interpolate=interpolate);
     ramp<-function(x,mn=NULL,mx=NULL,alpha=1){
 #         print(x);
         xrng<-range(x,na.rm=TRUE,finite=TRUE);
@@ -78,12 +76,12 @@ createColorScale<-function(clrs=c("#00007F","blue", "#007FFF", "cyan","#7FFF7F",
     if (showAsWheel) {
         n<-100;
         pal<-ramp((1:n)/n);#create a palette for convenience
-        pie(rep(1,n),col=pal,clockwise=TRUE,init.angle=90,border=NA);
+        graphics::pie(rep(1,n),col=pal,clockwise=TRUE,init.angle=90,border=NA);
     }
 
     if (showAsBar) {
         n<-100;
-        plot(c(0,1),c(0,n),type="n",xlab="",ylab="Scale (units)",ylim=c(0,n),yaxs="i",xaxs="i",xaxt="n");
+        graphics::plot(c(0,1),c(0,n),type="n",xlab="",ylab="Scale (units)",ylim=c(0,n),yaxs="i",xaxs="i",xaxt="n");
         for (i in 1:n) {
             rect(0,i-1,1,i,col=ramp(i,mx=n,mn=0),border=NA);
         }

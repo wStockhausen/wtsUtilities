@@ -2,7 +2,7 @@
 % Please edit documentation in R/createColorPalette.R
 \name{createColorPalette}
 \alias{createColorPalette}
-\title{Create a color palette.}
+\title{Create a color palette}
 \usage{
 createColorPalette(
   name,

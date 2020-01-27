@@ -2,7 +2,7 @@
 % Please edit documentation in R/concatenateCSVs.R
 \name{concatenateCSVs}
 \alias{concatenateCSVs}
-\title{Concatenate csv files into one.}
+\title{Concatenate csv files into one}
 \usage{
 concatenateCSVs(
   caption = "Select csv files",

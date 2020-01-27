@@ -3,7 +3,7 @@
 #'
 #' @description Function to test if character string is only whitespace (i.e., blank).
 #'
-#' @param strv - character string to test
+#' @param str - character string to test
 #'
 #' @return TRUE or FALSE. 
 #'

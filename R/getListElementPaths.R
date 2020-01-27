@@ -22,7 +22,7 @@ getListElementPaths<-function(lst,top=".",level="",verbose=TRUE){
         for (nm in nms){
             if (verbose) cat(level,"getSubListPaths(): checking '",paste0(top,"/",nm),"' for sublists.\n",sep='');
             if (nm!=''){
-                subnms<-getSubListPaths(lst[[nm]],top=paste0(top,"/",nm),level=paste0(level,"--"),verbose=verbose);
+                subnms<-getListElementPaths(lst[[nm]],top=paste0(top,"/",nm),level=paste0(level,"--"),verbose=verbose);
                 if (is.list(subnms)) {
                     if (verbose) cat(paste0(level,"-"),nm," has elements: ",paste0("'",unlist(subnms),"'",collapse=", "),".\n",sep='');
                     for (subnm in subnms) {ctr<-ctr+1; pths[[ctr]]<-subnm;}

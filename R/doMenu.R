@@ -5,6 +5,8 @@
 #' @param vals - vector of values
 #' @param prompts - ??
 #' 
+#' @details Uses package \code{uitls}. 
+#' 
 #'@export
 #'
 doMenu<-function(vals=NULL,prompts=NULL) {
@@ -13,7 +15,7 @@ doMenu<-function(vals=NULL,prompts=NULL) {
         prompts[i]<-paste(names(vals)[i]," = ",paste(vals,collapse=","));
     }
     while (i>0) {
-        i<-menu(prompts,graphics=TRUE,title="Select variable to change: ");
+        i<-utils::menu(prompts,graphics=TRUE,title="Select variable to change: ");
         if (i>0) {
             nm<-names(vals)[i];
             cat(paste(nm," = ",paste(vals[[i]],collapse=","),"\n",sep=""));

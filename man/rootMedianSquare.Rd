@@ -15,8 +15,8 @@ rootMedianSquare(y, na.rm = TRUE)
 the rmsd, or NA_real_ if y is all NAs
 }
 \description{
-Function to compute the root median square deviation (rmsd) of a vector
+Function to compute the root median square deviation (rmsd) of a vector.
 }
 \details{
-None.
+Uses package \code{stats}.
 }

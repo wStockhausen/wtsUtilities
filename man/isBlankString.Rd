@@ -7,7 +7,7 @@
 isBlankString(str)
 }
 \arguments{
-\item{strv}{- character string to test}
+\item{str}{- character string to test}
 }
 \value{
 TRUE or FALSE.

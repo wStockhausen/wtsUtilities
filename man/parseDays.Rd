@@ -2,7 +2,7 @@
 % Please edit documentation in R/parseDays.R
 \name{parseDays}
 \alias{parseDays}
-\title{Convert character vector of dates to numeric vector of days-of-month.}
+\title{Convert character vector of dates to numeric vector of days-of-month}
 \usage{
 parseDays(x, format = "MM/DD/YYYY")
 }

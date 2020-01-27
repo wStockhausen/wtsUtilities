@@ -11,8 +11,11 @@
 #' @return dataframe based on reading csv file. Returns NULL if no csv file
 #' was provided and the user canceled selection using the file dialog.
 #' 
-#' @export
+#' @details Uses package \code{utils}.
+#' 
 #' @importFrom tcltk tk_choose.files
+#' 
+#' @export
 #' 
 #
 getCSV<-function(csvfile=NULL,caption="Select csv file to import"){
@@ -21,7 +24,7 @@ getCSV<-function(csvfile=NULL,caption="Select csv file to import"){
         if (length(csvfile)==0) return(NULL);
     }  
     
-    dfr<-read.csv(file=csvfile,stringsAsFactors=FALSE);
+    dfr<-utils::read.csv(file=csvfile,stringsAsFactors=FALSE);
     return(dfr)
 }
 

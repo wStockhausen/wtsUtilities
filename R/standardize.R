@@ -1,5 +1,5 @@
 #'
-#'@title Standardize a vector or columns in a dataframe by converting to z-scores.
+#'@title Standardize a vector or columns in a dataframe by converting to z-scores
 #'
 #'@description Function to standardize a vector or columns in a dataframe by converting to z-scores.
 #'
@@ -50,7 +50,7 @@ standardize<-function(x,cols=NULL,factors=NULL,idxCols=NULL,verbose=FALSE){
         if (verbose) cat("qry:\n",qry,"\n");
         dfr2<-sqldf::sqldf(qry);
         if (verbose){
-            print(head(dfr2))
+            print(utils::head(dfr2));
         }
         for (col in cols){
             if (verbose) cat(col,":\n",sep="");

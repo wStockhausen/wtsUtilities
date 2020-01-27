@@ -2,7 +2,7 @@
 % Please edit documentation in R/standardize.R
 \name{standardize}
 \alias{standardize}
-\title{Standardize a vector or columns in a dataframe by converting to z-scores.}
+\title{Standardize a vector or columns in a dataframe by converting to z-scores}
 \usage{
 standardize(x, cols = NULL, factors = NULL, idxCols = NULL, verbose = FALSE)
 }

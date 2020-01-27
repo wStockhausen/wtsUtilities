@@ -28,16 +28,16 @@ calcCIs<-function(vals,cvs=NULL,sdvs=NULL,
         if (is.null(sdvs)){
             sdv<-cv*obs;
         } else {sdv <- sdvs;}
-        lci<-qnorm(ci[1],mean=obs,sd=sdv);
-        uci<-qnorm(ci[2],mean=obs,sd=sdv);
+        lci<-stats::qnorm(ci[1],mean=obs,sd=sdv);
+        uci<-stats::qnorm(ci[2],mean=obs,sd=sdv);
     } else if (tolower(pdfType[1])=='lognormal'){
         if (verbose) cat('using err type = lognormal\n')
         if (!is.null(sdvs)){
             cv <- sdvs/vals;
         }
         sdv<-sqrt(log(1+cv^2));#log-scale std dev
-        lci<-qlnorm(ci[1],meanlog=log(obs),sdlog=sdv);
-        uci<-qlnorm(ci[2],meanlog=log(obs),sdlog=sdv);
+        lci<-stats::qlnorm(ci[1],meanlog=log(obs),sdlog=sdv);
+        uci<-stats::qlnorm(ci[2],meanlog=log(obs),sdlog=sdv);
     } else {
         cat('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n')
         cat('Error in wtsUtilities::calcCIs.\n')

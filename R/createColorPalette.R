@@ -1,5 +1,5 @@
 #'
-#'@title Create a color palette.
+#'@title Create a color palette
 #'
 #'@description Creates a color palette (or returns a pre-defined one).
 #'
@@ -45,21 +45,21 @@ createColorPalette<-function(name,
                              showAsWheel=FALSE,
                              showAsBar=FALSE) {
     if (name=="rainbow"){
-        pal<-rainbow(n,s=s,v=v,start=start,end=end,alpha=alpha);
+        pal<-grDevices::rainbow(n,s=s,v=v,start=start,end=end,alpha=alpha);
     } else if (name=="heat") {
-        pal<-heat.colors(n,alpha=alpha);
+        pal<-pal<-grDevices::heat.colors(n,alpha=alpha);
     } else if (name=="terrain") {
-        pal<-terrain.colors(n,alpha=alpha);
+        pal<-pal<-grDevices::terrain.colors(n,alpha=alpha);
     } else if (name=="topo") {
-        pal<-topo.colors(n,alpha=alpha);
+        pal<-pal<-grDevices::topo.colors(n,alpha=alpha);
     } else if (name=="cm") {
-        pal<-cm.colors(n,alpha=alpha);
+        pal<-pal<-grDevices::cm.colors(n,alpha=alpha);
     } else if (name=="jet") {
         clrs<-c("#00007F","blue", "#007FFF", "cyan","#7FFF7F", "yellow", "#FF7F00", "red", "#7F0000");
-        crp<-colorRampPalette(clrs,bias=bias,space=space,interpolate=interpolate);
+        crp<-pal<-grDevices::colorRampPalette(clrs,bias=bias,space=space,interpolate=interpolate);
         pal<-crp(n);
     } else if (name=="ramp") {
-        crp<-colorRampPalette(clrs,bias=bias,space=space,interpolate=interpolate);
+        crp<-pal<-grDevices::colorRampPalette(clrs,bias=bias,space=space,interpolate=interpolate);
         pal<-crp(n);
     }
 

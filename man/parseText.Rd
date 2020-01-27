@@ -3,7 +3,7 @@
 \name{parseText}
 \alias{parseText}
 \title{Parse text in character vector into individual elements by quotes and whitespace, 
-keeping quoted text together in same element (with whitespace but without quotation marks).}
+keeping quoted text together in same element (with whitespace but without quotation marks)}
 \usage{
 parseText(
   strv,

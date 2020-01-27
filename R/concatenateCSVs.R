@@ -1,5 +1,5 @@
 #'
-#'@title Concatenate csv files into one.
+#'@title Concatenate csv files into one
 #'
 #'@description Function to concatenate a number of csv files (with identical column strucuture)
 #'into a single csv file.
@@ -58,9 +58,9 @@ concatenateCSVs<-function(caption="Select csv files",
             tbl<-getCSV(csvfile=in.csv);
             if (inclHdr){
                 inclHdr<-FALSE;
-                write.table(tbl,file=out.csv,sep=",",quote=FALSE,col.names=TRUE,row.names=FALSE,append=FALSE)
+                utils::write.table(tbl,file=out.csv,sep=",",quote=FALSE,col.names=TRUE,row.names=FALSE,append=FALSE)
             } else {
-                write.table(tbl,file=out.csv,sep=",",quote=FALSE,col.names=FALSE,row.names=FALSE,append=TRUE)
+                utils::write.table(tbl,file=out.csv,sep=",",quote=FALSE,col.names=FALSE,row.names=FALSE,append=TRUE)
             }
         }
     }

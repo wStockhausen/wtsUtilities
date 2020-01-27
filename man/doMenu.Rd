@@ -14,3 +14,6 @@ doMenu(vals = NULL, prompts = NULL)
 \description{
 Creates a menu of items from a vector of values and a vector of prompts
 }
+\details{
+Uses package \code{uitls}.
+}

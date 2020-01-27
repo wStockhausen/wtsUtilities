@@ -3,9 +3,9 @@
 #' 
 #' @description Function to "rectxify" x,y vectors for a ggplot2::geom_rect xy plot.
 #' 
-#' @param x - 
-#' @param y - 
-#' @param dx
+#' @param x - vector to expand
+#' @param y - vector to expand
+#' @param dx - increment along x-axis 
 #' 
 #' @return dataframe with expanded elements xmin,xmax,ymin,ymax
 #' 

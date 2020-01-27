@@ -2,7 +2,7 @@
 % Please edit documentation in R/parseMonths.R
 \name{parseMonths}
 \alias{parseMonths}
-\title{Convert character vector of dates to numeric vector of months.}
+\title{Convert character vector of dates to numeric vector of months}
 \usage{
 parseMonths(x, format = "MM/DD/YYYY")
 }

@@ -16,5 +16,5 @@ cv (or std dev, if mean=0).
 Function to calculate the cv (or std dev, if mean=0) of a vector.
 }
 \details{
-None.
+Uses package \code{stats}.
 }

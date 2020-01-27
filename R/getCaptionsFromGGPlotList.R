@@ -3,7 +3,7 @@
 #' 
 #' @description Function to extract captions from list of plots in printGGList format.
 #' 
-#' @param x - list of plots in printGGList format, with captions as list names
+#' @param plts - list of plots in printGGList format, with captions as list names
 #' 
 #' @details Uses \code{stringr::str_trim} to trim leading and trailing whitespace.
 #' 

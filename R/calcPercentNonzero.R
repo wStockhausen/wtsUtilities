@@ -11,7 +11,7 @@
 #'
 #' @return a dataframe
 #'
-#' @details
+#' @details None.
 #'
 #' @export
 #'

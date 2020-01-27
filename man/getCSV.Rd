@@ -21,3 +21,6 @@ If a file name is not provided, the function displays a (tcltk)
 file chooser dialog.\cr 
 Requires package "tcltk".
 }
+\details{
+Uses package \code{utils}.
+}

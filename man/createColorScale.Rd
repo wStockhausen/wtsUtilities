@@ -2,7 +2,7 @@
 % Please edit documentation in R/createColorScale.R
 \name{createColorScale}
 \alias{createColorScale}
-\title{Create a function defining a color scale.}
+\title{Create a function defining a color scale}
 \usage{
 createColorScale(
   clrs = c("#00007F", "blue", "#007FFF", "cyan", "#7FFF7F", "yellow", "#FF7F00", "red",
@@ -44,6 +44,6 @@ New color scales can be created based on pre-defined color vectors using the fol
 'jet', 'coldhot', 'cold', and 'hot' \cr 
 Specifying a pre-defined name eliminates the need to specify the 'clrs' color vector. \cr 
 Arbitrary scales can created by specifying NULL for 'name' (the default) and providing a vector
-of colors to use to define the scale function. This uses the graphics function "colorRamp" to define
-the underlying color ramp used for the scale.
+of colors to use to define the scale function. This uses the grDevices package function "colorRamp" to define
+the underlying color ramp used for the scale. Uses packages \code{graphics} and \code{grDevices].}
 }

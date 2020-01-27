@@ -7,7 +7,7 @@
 getCaptionsFromGGPlotList(plts)
 }
 \arguments{
-\item{x}{- list of plots in printGGList format, with captions as list names}
+\item{plts}{- list of plots in printGGList format, with captions as list names}
 }
 \value{
 character vector with plot captions as elements

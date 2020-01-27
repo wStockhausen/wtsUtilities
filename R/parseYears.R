@@ -1,5 +1,5 @@
 #'
-#'@title Convert character vector of dates to numeric vector of days-of-month.
+#'@title Convert character vector of dates to numeric vector of days-of-month
 #'
 #'@description Function to convert a character vector of dates to a numeric vector of days-of-month.
 #'
