@@ -7,7 +7,7 @@
 #' @param fn - filename to which to save the R object 
 #' 
 #' @details The original R object is saved with the name 'obj', so it can easily
-#' be returned using the function \link{\code{wtsUtilities::getObj}}.
+#' be returned using the function \code{\link{getObj}}.
 #' 
 #' @export
 #' 
@@ -25,7 +25,7 @@ saveObj<-function(obj,fn){
 #' @return the object
 #' 
 #' @details The original R object must have been saved with the name 'obj' (see
-#' \link{\code{wtsUtilities::saveObj}} for a function to do so).
+#' \code{\link{saveObj}} for a function to do so).
 #' 
 #' @export
 #' 

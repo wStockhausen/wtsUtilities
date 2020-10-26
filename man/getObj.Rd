@@ -17,5 +17,5 @@ Function to get a saved object ('obj') from an RData file.
 }
 \details{
 The original R object must have been saved with the name 'obj' (see
-\link{\code{wtsUtilities::saveObj}} for a function to do so).
+\code{\link{saveObj}} for a function to do so).
 }

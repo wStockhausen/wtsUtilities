@@ -16,5 +16,5 @@ Function to save an R object to an RData file with name 'obj'.
 }
 \details{
 The original R object is saved with the name 'obj', so it can easily
-be returned using the function \link{\code{wtsUtilities::getObj}}.
+be returned using the function \code{\link{getObj}}.
 }
