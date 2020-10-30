@@ -16,9 +16,9 @@
 #'(summing to 1), the cumulative sum of the values, and the cumulative sum of the normalized values, where the 
 #'normalization and sums are taken over each factor combination and the associated index set. 
 #'
-#'@details None.
+#'@details Requires \pkg{sqldf}.
 #'
-#'Requires \code{sqldf::sqldf}
+#'@importFrom sqldf sqldf
 #'
 #'@export
 #'
@@ -67,3 +67,4 @@ addCumSums<-function(dfr,
     }
     return(dfr1);
 }
+

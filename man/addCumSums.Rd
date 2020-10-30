@@ -29,7 +29,5 @@ Function to add cumulative sums (standard and normalized) of a column to a
 dataframe by an index column and set of factor columns.
 }
 \details{
-None.
-
-Requires \code{sqldf::sqldf}
+Requires \pkg{sqldf}.
 }
