@@ -4,7 +4,7 @@
 \alias{createRectGrid}
 \title{Add cumulative sums (standard and normalized) of a column to a dataframe by an index and set of factors}
 \usage{
-createRectGrid(xctrs, yctrs, dx = 0.5, dy = 0.5)
+createRectGrid(xctrs, yctrs, dx = 1, dy = 1)
 }
 \arguments{
 \item{xctrs}{- vector of x-axis locations of grid cell centers}
@@ -25,10 +25,10 @@ dataframe by an index column and set of factor columns.
 \details{
 The returned tibble will have the following columns: 
 \itemize{
- \item{xc - cell center location along x-axis}
- \item{yc - cell center location along y-axis}
+ \item{xc - rectangle center location along x-axis}
+ \item{yc - rectangle center location along y-axis}
  \item{id - id (character) for rectangle with center xc,yc [="(xc,yc)"]}
- \item{x - cell corner location along x-axis}
- \item{y - cell corner location along y-axis}
+ \item{x - rectangle corner location along x-axis}
+ \item{y - rectangle corner location along y-axis}
 }
 }
