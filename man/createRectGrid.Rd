@@ -2,7 +2,7 @@
 % Please edit documentation in R/createRectGrid.R
 \name{createRectGrid}
 \alias{createRectGrid}
-\title{Add cumulative sums (standard and normalized) of a column to a dataframe by an index and set of factors}
+\title{Create a \pkg{tibble} tibble describing a rectangular grid}
 \usage{
 createRectGrid(xctrs, yctrs, dx = 1, dy = 1)
 }
@@ -16,11 +16,10 @@ createRectGrid(xctrs, yctrs, dx = 1, dy = 1)
 \item{dy}{- rectangle height (length along y-axis)}
 }
 \value{
-a \code{\link[tibble]{tibble}}. See @details
+a \code{\link[tibble]{tibble}}. See Details.
 }
 \description{
-Function to add cumulative sums (standard and normalized) of a column to a 
-dataframe by an index column and set of factor columns.
+Function to create a \pkg{tibble} tibble describing a rectangular grid.
 }
 \details{
 The returned tibble will have the following columns: 

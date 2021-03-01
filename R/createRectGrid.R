@@ -1,15 +1,14 @@
 #'
-#' @title Add cumulative sums (standard and normalized) of a column to a dataframe by an index and set of factors
+#' @title Create a \pkg{tibble} tibble describing a rectangular grid
 #'
-#' @description  Function to add cumulative sums (standard and normalized) of a column to a 
-#' dataframe by an index column and set of factor columns.
+#' @description  Function to create a \pkg{tibble} tibble describing a rectangular grid.
 #' 
 #' @param xctrs - vector of x-axis locations of grid cell centers 
 #' @param yctrs - vector of y-axis locations of grid cell centers 
 #' @param dx - rectangle width (length along x-axis)
 #' @param dy - rectangle height (length along y-axis)
 #'       
-#'@return a \code{\link[tibble]{tibble}}. See @details
+#'@return a \code{\link[tibble]{tibble}}. See Details.
 #'
 #'@details The returned tibble will have the following columns: 
 #'\itemize{
