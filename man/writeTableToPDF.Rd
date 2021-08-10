@@ -14,7 +14,7 @@ writeTableToPDF(
   margin = 0.1,
   orientation = "portrait",
   units = "in",
-  cleanup = FALSE
+  cleanup = TRUE
 )
 }
 \arguments{

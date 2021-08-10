@@ -40,7 +40,7 @@ writeTableToPDF<-function(tbl_tex,
                           margin=0.1,
                           orientation="portrait",
                           units="in",
-                          cleanup=FALSE){
+                          cleanup=TRUE){
   if (is.null(template_tex)){
       #--get default template
       template_tex_file = system.file("tex/templateForTable.tex",package="wtsUtilities");
