@@ -6,7 +6,7 @@
 \usage{
 writeTableToPDF(
   tbl_tex,
-  template_tex = system.file("tex/templateForTable.tex", package = "wtsUtilities"),
+  template_tex = NULL,
   pdf_name = "table.pdf",
   insertion_point = "&&tex_str",
   pageheight = 8.5,
@@ -53,7 +53,7 @@ The insertion point in the template is indicated by the value of \code{insertion
 \code{tex/templateForTable.tex}.
 
 The intermediate files are named "tex_DUMMY_TEX_FILE" with extensions .tex, .aux, .log, and .pdf. The pdf file
-is copied to the file given by pdf_name (which defaults to 'table_str.pdf').
+is copied to the file given by pdf_name (which defaults to 'table.pdf').
 }
 \note{
 The use of orientation="landscape" reverses the sense of pageheight and pagewidth in determining the page sie,
