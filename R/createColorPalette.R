@@ -21,16 +21,15 @@
 #''rainbow', 'heat', 'topo', 'cm', and 'jet'\cr
 #'Specifying a pre-defined palette eliminates the need to specify the 'clrs' color vector.\cr 
 #'Palettes can created based on arbitrary base palettes by specifying name as 'ramp' and providing a vector
-#'of colors to use as the base palette (via clrs). This appraoch uses the grpahics function "colorRampPalette" 
+#'of colors to use as the base palette (via clrs). This approach uses the graphics function "colorRampPalette" 
 #'to create the palette.
 #'
 #'@return a color palette
 #'
-#'@export
 #'@import graphics
 #'
-#require(graphics);
-#----------------------------------------------------------
+#'@export
+#'
 createColorPalette<-function(name,
                              n=1,
                              alpha=1,

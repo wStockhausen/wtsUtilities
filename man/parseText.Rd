@@ -15,7 +15,7 @@ parseText(
 )
 }
 \arguments{
-\item{strv}{- chracter vector to parse}
+\item{strv}{- character vector to parse}
 
 \item{qt}{- the character indicating quotation (' or ")}
 

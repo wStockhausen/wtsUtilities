@@ -19,8 +19,8 @@ was provided and the user canceled selection using the file dialog.
 Opens a csv file and returns it as a dataframe.\cr 
 If a file name is not provided, the function displays a (tcltk)
 file chooser dialog.\cr 
-Requires package "tcltk".
+Uses package "tcltk".
 }
 \details{
-Uses package \code{utils}.
+Uses packages \code{utils}, \pkg{tcltk}.
 }

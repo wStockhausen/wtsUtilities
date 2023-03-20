@@ -59,6 +59,6 @@ New (interpolated) palettes can be created based on the following pre-defined pa
 'rainbow', 'heat', 'topo', 'cm', and 'jet'\cr
 Specifying a pre-defined palette eliminates the need to specify the 'clrs' color vector.\cr 
 Palettes can created based on arbitrary base palettes by specifying name as 'ramp' and providing a vector
-of colors to use as the base palette (via clrs). This appraoch uses the grpahics function "colorRampPalette" 
+of colors to use as the base palette (via clrs). This approach uses the graphics function "colorRampPalette" 
 to create the palette.
 }

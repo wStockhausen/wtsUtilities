@@ -5,7 +5,7 @@
 #'@description Function to parse text in character vector into individual elements by quotes and whitespace, 
 #'keeping quoted text together in same element (with whitespace but without quotation marks).
 #'
-#'@param strv - chracter vector to parse
+#'@param strv - character vector to parse
 #'@param qt - the character indicating quotation (' or ")
 #'@param keepQuotes - flag to keep the quotation marks in the output (does nothing)
 #'@param stripComments - flag to remove comments prior to parsing

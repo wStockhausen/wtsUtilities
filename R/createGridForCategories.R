@@ -4,7 +4,7 @@
 #' @description  Function to create a \pkg{tibble} tibble describing a rectangular grid defined by two sets of categories.
 #' 
 #' @param xcats - vector of categories for x-axis 
-#' @param yctrs - vector of categories for y-axis
+#' @param ycats - vector of categories for y-axis
 #'       
 #'@return a \code{\link[tibble]{tibble}}. See Details.
 #'

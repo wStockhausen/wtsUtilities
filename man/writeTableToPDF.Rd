@@ -20,6 +20,8 @@ writeTableToPDF(
 \arguments{
 \item{tbl_tex}{- the tex string from tables::toLatex(tabular)}
 
+\item{template_tex}{- character string of tex template}
+
 \item{pdf_name}{- the desired name for the resulting pdf file}
 
 \item{insertion_point}{- string identifying point at which to insert the tex string into the template}
@@ -35,8 +37,6 @@ writeTableToPDF(
 \item{units}{- units for measurements (e.g., "in" or "cm")}
 
 \item{cleanup}{- flag to clean up intermediate files}
-
-\item{template_tex_str}{- character string of tex template}
 }
 \value{
 Invisibly, the tex string for the pdf document.
@@ -46,7 +46,7 @@ Function to create a pdf file from latex from a tabular object.
 }
 \details{
 This function inserts the latex string \code{tbl_tex} returned by [tables::toLatex(tbl)] called on
-a table \code{tbl}into a tex template (\code{tex_template_str}) for a document. It then converts the resulting tex to a pdf using
+a table \code{tbl}into a tex template (\code{tex_template}) for a document. It then converts the resulting tex to a pdf using
 [writeTexToPDF()].
 
 The insertion point in the template is indicated by the value of \code{insertion_point}. A default template is provided in
@@ -56,6 +56,6 @@ The intermediate files are named "tex_DUMMY_TEX_FILE" with extensions .tex, .aux
 is copied to the file given by pdf_name (which defaults to 'table.pdf').
 }
 \note{
-The use of orientation="landscape" reverses the sense of pageheight and pagewidth in determining the page sie,
+The use of orientation="landscape" reverses the sense of pageheight and pagewidth in determining the page size,
 but does not rotate the table.
 }

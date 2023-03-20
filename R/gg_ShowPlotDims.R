@@ -48,7 +48,6 @@ gg_ShowPlotDims<-function(p,
                           ytick=xtick,
                           showPlot=TRUE,
                           verbose=0){
-  require(magrittr); require(ggplot2);
   if (is.null(null_x)|is.null(null_y)) {null_x=null_y=null;}
 	if(inherits(p, "ggplot")){
 	    if (verbose) cat("gg_ShowPlotDims: p is a ggplot object\n");

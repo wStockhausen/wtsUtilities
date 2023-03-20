@@ -14,7 +14,6 @@
 #'
 #'@export
 #'
-#source("../Utilities/sortBy.R",chdir=TRUE);
 getFactorLevels<-function(dfr,factors,sortBy=NULL,ascending=TRUE,orthogonal=FALSE,debug=FALSE){
     if (debug) cat("Entered getFactorLevels\n")
     #coerce dfr to dataframe, if necessary

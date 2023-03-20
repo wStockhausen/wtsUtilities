@@ -44,7 +44,6 @@ gg_GetPlotDims<-function(p,
                           null_y=NULL,
                           returnAll=FALSE,
                           verbose=0){
-  require(magrittr); require(ggplot2);
   if (verbose) cat("--starting gg_GetPlotDims\n");
   if (is.null(null_x)|is.null(null_y)) {null_x=null_y=null;}
 	if(inherits(p, "ggplot")){

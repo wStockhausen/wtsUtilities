@@ -25,9 +25,6 @@
 #'
 #'@export
 #'
-#require(graphics);
-#source("../Plots/createColorPalette.R",chdir=TRUE);
-#----------------------------------------------------------
 createColorScale<-function(clrs=c("#00007F","blue", "#007FFF", "cyan","#7FFF7F", "yellow", "#FF7F00", "red", "#7F0000"),
                           name=NULL,
                           bias=1,

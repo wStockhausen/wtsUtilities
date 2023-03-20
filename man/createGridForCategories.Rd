@@ -9,7 +9,7 @@ createGridForCategories(xcats, ycats)
 \arguments{
 \item{xcats}{- vector of categories for x-axis}
 
-\item{yctrs}{- vector of categories for y-axis}
+\item{ycats}{- vector of categories for y-axis}
 }
 \value{
 a \code{\link[tibble]{tibble}}. See Details.
