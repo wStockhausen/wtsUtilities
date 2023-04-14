@@ -7,7 +7,9 @@
 parseNum(str)
 }
 \arguments{
-\item{str}{- character vector to parse}
+\item{str}{\itemize{
+\item character vector to parse
+}}
 }
 \value{
 parsed and evaluated numerical expressions as a vector

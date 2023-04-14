@@ -7,9 +7,13 @@
 valid_indices(idx, n)
 }
 \arguments{
-\item{idx}{- vector of "candidate" indices}
+\item{idx}{\itemize{
+\item vector of "candidate" indices
+}}
 
-\item{n}{- max valid index}
+\item{n}{\itemize{
+\item max valid index
+}}
 }
 \value{
 vector of valid indices, in order they occur in \code{idx}

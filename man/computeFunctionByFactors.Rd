@@ -2,7 +2,7 @@
 % Please edit documentation in R/computeFunctionByFactors.R
 \name{computeFunctionByFactors}
 \alias{computeFunctionByFactors}
-\title{Compute results using an arbitrary function on columns in a dataframe, 
+\title{Compute results using an arbitrary function on columns in a dataframe,
 by a set of factor levels}
 \usage{
 computeFunctionByFactors(
@@ -16,28 +16,43 @@ computeFunctionByFactors(
 )
 }
 \arguments{
-\item{df}{- dataframe (or object that can be cast to a dataframe) with variables and factors}
+\item{df}{\itemize{
+\item dataframe (or object that can be cast to a dataframe) with variables and factors
+}}
 
-\item{fcn}{- function name AS CHARACTER STRING
+\item{fcn}{\itemize{
+\item function name AS CHARACTER STRING
 to apply to each var in vars by each
-unique factor level combination}
+unique factor level combination
+}}
 
-\item{factors}{- vector of names of columns in df
-to serve as factors in the function applications}
+\item{factors}{\itemize{
+\item vector of names of columns in df
+to serve as factors in the function applications
+}}
 
-\item{vars}{- vector of names of column in df
-that the function should be applied to}
+\item{vars}{\itemize{
+\item vector of names of column in df
+that the function should be applied to
+}}
 
-\item{sortBy}{- vector of factor column names to sort results by}
+\item{sortBy}{\itemize{
+\item vector of factor column names to sort results by
+}}
 
-\item{ascending}{- flag (T/F) to sort in ascending/descending order}
+\item{ascending}{\itemize{
+\item flag (T/F) to sort in ascending/descending order
+}}
 
-\item{debug}{- flag (T/F) to print debugging info}
+\item{debug}{\itemize{
+\item flag (T/F) to print debugging info
+}}
 }
 \value{
-dataframe of results with columns corresponding to factors and vars
+\if{html}{\out{<div class="sourceCode">}}\preformatted{  dataframe of results with columns corresponding to factors and vars
+}\if{html}{\out{</div>}}
 }
 \description{
 Function to compute results from an arbitrary function (fcn)
-      on colunms in a dataframe, by a set of factor levels
+on colunms in a dataframe, by a set of factor levels
 }

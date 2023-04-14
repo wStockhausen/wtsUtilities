@@ -7,11 +7,17 @@
 extractWord(x, which = 1, split = " ")
 }
 \arguments{
-\item{x}{- a vector of character strings}
+\item{x}{\itemize{
+\item a vector of character strings
+}}
 
-\item{which}{- integer indicating which word, by position, to extract}
+\item{which}{\itemize{
+\item integer indicating which word, by position, to extract
+}}
 
-\item{split}{- character string by which to define words}
+\item{split}{\itemize{
+\item character string by which to define words
+}}
 }
 \value{
 a vector of words extracted bby location from x (of length(x))
@@ -20,9 +26,9 @@ a vector of words extracted bby location from x (of length(x))
 Function to extract a vector of the n-th word by location from a vector of character strings.
 }
 \details{
-Uses \code{strsplit(x,split,fixed=TRUE)} to split each character 
-string in x into a list of vectors of 'words', then extracts the n-th word 
-from each list element (where n is the input value of \code{which}). If a 
-list element has less than \code{which} words, the associated value in the 
+Uses \code{strsplit(x,split,fixed=TRUE)} to split each character
+string in x into a list of vectors of 'words', then extracts the n-th word
+from each list element (where n is the input value of \code{which}). If a
+list element has less than \code{which} words, the associated value in the
 returned vector will be "".
 }

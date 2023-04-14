@@ -7,9 +7,13 @@
 sumByDims(n, dims = 1)
 }
 \arguments{
-\item{n}{- array to sum}
+\item{n}{\itemize{
+\item array to sum
+}}
 
-\item{dims}{- vector of indices for dimension to sum by}
+\item{dims}{\itemize{
+\item vector of indices for dimension to sum by
+}}
 }
 \value{
 array with dimensions used for summing

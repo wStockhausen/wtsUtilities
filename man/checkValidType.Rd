@@ -7,9 +7,13 @@
 checkValidType(type, valid_types)
 }
 \arguments{
-\item{type}{- string to check}
+\item{type}{\itemize{
+\item string to check
+}}
 
-\item{valid_types}{- vector of valid types}
+\item{valid_types}{\itemize{
+\item vector of valid types
+}}
 }
 \value{
 TRUE if the value of \code{type} is a valid type, FALSE otherwise.
@@ -18,7 +22,7 @@ TRUE if the value of \code{type} is a valid type, FALSE otherwise.
 Function to check type against vector of valid types.
 }
 \details{
-If FALSE, a warning message is generated. 
+If FALSE, a warning message is generated.
 It is the responsibility of the caller to determine what an
 appropriate response is.
 }

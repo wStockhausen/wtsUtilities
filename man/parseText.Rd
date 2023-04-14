@@ -2,7 +2,7 @@
 % Please edit documentation in R/parseText.R
 \name{parseText}
 \alias{parseText}
-\title{Parse text in character vector into individual elements by quotes and whitespace, 
+\title{Parse text in character vector into individual elements by quotes and whitespace,
 keeping quoted text together in same element (with whitespace but without quotation marks)}
 \usage{
 parseText(
@@ -15,28 +15,42 @@ parseText(
 )
 }
 \arguments{
-\item{strv}{- character vector to parse}
+\item{strv}{\itemize{
+\item character vector to parse
+}}
 
-\item{qt}{- the character indicating quotation (' or ")}
+\item{qt}{\itemize{
+\item the character indicating quotation (' or ")
+}}
 
-\item{keepQuotes}{- flag to keep the quotation marks in the output (does nothing)}
+\item{keepQuotes}{\itemize{
+\item flag to keep the quotation marks in the output (does nothing)
+}}
 
-\item{stripComments}{- flag to remove comments prior to parsing}
+\item{stripComments}{\itemize{
+\item flag to remove comments prior to parsing
+}}
 
-\item{comment}{- character used to indicate the start of a comment}
+\item{comment}{\itemize{
+\item character used to indicate the start of a comment
+}}
 
-\item{verbose}{- flag (T/F) to print diagnostic info}
+\item{verbose}{\itemize{
+\item flag (T/F) to print diagnostic info
+}}
 }
 \value{
 numbered list, with elements corresponding to the equivalent vector element in strv
 AFTER comments have been removed.
 }
 \description{
-Function to parse text in character vector into individual elements by quotes and whitespace, 
+Function to parse text in character vector into individual elements by quotes and whitespace,
 keeping quoted text together in same element (with whitespace but without quotation marks).
 }
 \details{
 Each element in the returned list is a character vector whose elements consist of
-1) quoted text blocks and 2) unquoted text elements split by white space in the order they occur in the
+\enumerate{
+\item quoted text blocks and 2) unquoted text elements split by white space in the order they occur in the
 element of the character vector.
+}
 }

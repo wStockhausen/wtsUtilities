@@ -7,7 +7,9 @@
 getFunctionName(fcn)
 }
 \arguments{
-\item{fcn}{- function name as an expression}
+\item{fcn}{\itemize{
+\item function name as an expression
+}}
 }
 \value{
 function name as character string

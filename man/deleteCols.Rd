@@ -7,11 +7,17 @@
 deleteCols(tbl, cols, debug = FALSE)
 }
 \arguments{
-\item{tbl}{- dataframe or matrix from which to delete columns}
+\item{tbl}{\itemize{
+\item dataframe or matrix from which to delete columns
+}}
 
-\item{cols}{- names of column to delete}
+\item{cols}{\itemize{
+\item names of column to delete
+}}
 
-\item{debug}{- T/F to print debugging info}
+\item{debug}{\itemize{
+\item T/F to print debugging info
+}}
 }
 \value{
 dataframe or matrix with columns removed

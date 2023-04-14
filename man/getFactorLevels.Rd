@@ -14,22 +14,34 @@ getFactorLevels(
 )
 }
 \arguments{
-\item{dfr}{- input dataframe (or object that can be cast to a dataframe)}
+\item{dfr}{\itemize{
+\item input dataframe (or object that can be cast to a dataframe)
+}}
 
-\item{factors}{- vector of desired factor names from dfr}
+\item{factors}{\itemize{
+\item vector of desired factor names from dfr
+}}
 
-\item{sortBy}{- vector of factor names to sort by (in order of precedence)}
+\item{sortBy}{\itemize{
+\item vector of factor names to sort by (in order of precedence)
+}}
 
-\item{ascending}{- flag (T/F) to sort in ascending/descending order}
+\item{ascending}{\itemize{
+\item flag (T/F) to sort in ascending/descending order
+}}
 
-\item{orthogonal}{- flag (T/F) to form orthogonal combination of individual factors}
+\item{orthogonal}{\itemize{
+\item flag (T/F) to form orthogonal combination of individual factors
+}}
 
-\item{debug}{- flag (T/F) to print debugging info}
+\item{debug}{\itemize{
+\item flag (T/F) to print debugging info
+}}
 }
 \value{
 a dataframe containing each unique combination of factor levels in dfr
 }
 \description{
 Returns the unique combination of levels
-  of the specified "factors" in a dataframe.
+of the specified "factors" in a dataframe.
 }

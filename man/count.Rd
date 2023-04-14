@@ -7,7 +7,9 @@
 count(x)
 }
 \arguments{
-\item{x}{- a vector of numbers (or object coerceable to a vector)}
+\item{x}{\itemize{
+\item a vector of numbers (or object coerceable to a vector)
+}}
 }
 \value{
 number of non-NAs in x

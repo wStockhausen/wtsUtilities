@@ -7,7 +7,9 @@
 cvp(x)
 }
 \arguments{
-\item{x}{- vector}
+\item{x}{\itemize{
+\item vector
+}}
 }
 \value{
 cv (or std dev, if mean=0).

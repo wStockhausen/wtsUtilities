@@ -12,13 +12,21 @@ applyCutPts(
 )
 }
 \arguments{
-\item{zs}{- the vector to apply cutpoints to}
+\item{zs}{\itemize{
+\item the vector to apply cutpoints to
+}}
 
-\item{cutpts}{- vector of cutpoints}
+\item{cutpts}{\itemize{
+\item vector of cutpoints
+}}
 
-\item{truncate.low}{- flag to truncate below first cutpoint (i.e., cutpt[1]<-0)}
+\item{truncate.low}{\itemize{
+\item flag to truncate below first cutpoint (i.e., cutpt\link{1}<-0)
+}}
 
-\item{truncate.high}{- flag to truncate above last cutpoint (i.e., cutpt[last]<-Inf)}
+\item{truncate.high}{\itemize{
+\item flag to truncate above last cutpoint (i.e., cutpt\link{last}<-Inf)
+}}
 }
 \value{
 a vector with values aligned to the left cutpoints

@@ -7,9 +7,13 @@
 mod(x, y)
 }
 \arguments{
-\item{x}{- a number or vector}
+\item{x}{\itemize{
+\item a number or vector
+}}
 
-\item{y}{- a number or vector}
+\item{y}{\itemize{
+\item a number or vector
+}}
 }
 \value{
 the result x modulo y

@@ -7,13 +7,21 @@
 gg_GetPlotSizeInfo(p, unit = "in", keepAll = FALSE, verbose = 0)
 }
 \arguments{
-\item{p}{- ggplot or gtable object}
+\item{p}{\itemize{
+\item ggplot or gtable object
+}}
 
-\item{unit}{- plot units ("in", "cm", etc.)}
+\item{unit}{\itemize{
+\item plot units ("in", "cm", etc.)
+}}
 
-\item{keepAll}{- flag (T/F) to keep all grobs (including grobs with physical size 0)}
+\item{keepAll}{\itemize{
+\item flag (T/F) to keep all grobs (including grobs with physical size 0)
+}}
 
-\item{verbose}{- flag (0,1,2) to print intermediate information (0=off)}
+\item{verbose}{\itemize{
+\item flag (0,1,2) to print intermediate information (0=off)
+}}
 }
 \value{
 invisibly returns a list with elements

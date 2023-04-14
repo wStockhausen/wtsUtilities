@@ -15,38 +15,52 @@ gg_ShowPlotGrobs(
 )
 }
 \arguments{
-\item{p}{- ggplot or gtable object}
+\item{p}{\itemize{
+\item ggplot or gtable object
+}}
 
-\item{unit}{- plot units ("in", "cm", etc.)}
+\item{unit}{\itemize{
+\item plot units ("in", "cm", etc.)
+}}
 
-\item{xOffset}{- x-axis offset for row size labels}
+\item{xOffset}{\itemize{
+\item x-axis offset for row size labels
+}}
 
-\item{yOffset}{- y-axis offset for column size labels}
+\item{yOffset}{\itemize{
+\item y-axis offset for column size labels
+}}
 
-\item{showAll}{- flag (T/F) to show all grobs (including grobs with physical size 0)}
+\item{showAll}{\itemize{
+\item flag (T/F) to show all grobs (including grobs with physical size 0)
+}}
 
-\item{showPlot}{- flag (T/F) to print grob plot}
+\item{showPlot}{\itemize{
+\item flag (T/F) to print grob plot
+}}
 
-\item{verbose}{- flag (0,1,2) to print intermediate information (0=off)}
+\item{verbose}{\itemize{
+\item flag (0,1,2) to print intermediate information (0=off)
+}}
 }
 \value{
 invisibly returns a list with elements
 plot - plot of object components with axes reflecting inferred sizes
 lyt - vector with plot width and height
-tbl_rows - 
-sum_rows - 
-tbl_cols - 
+tbl_rows -
+sum_rows -
+tbl_cols -
 sum_cols -
 }
 \description{
 Function to show component "grobs" of a ggplot2 object (and get info on grob sizes).
 }
 \details{
-This function identifies scales of components in a ggplot2 object 
+This function identifies scales of components in a ggplot2 object
 and creates an unfilled rectangle plot of the resulting components with axes reflecting
 the rows and columns in the gtable derived from the ggplot2 object.
 
-See also [gg_ShowPlotDims], which is similar but provides absolute scales.
+See also \link{gg_ShowPlotDims}, which is similar but provides absolute scales.
 }
 \author{
 William Stockhausen (william.stockhausen@noaa.gov)

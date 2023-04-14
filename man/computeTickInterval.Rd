@@ -7,9 +7,13 @@
 computeTickInterval(rng, nticks = 5)
 }
 \arguments{
-\item{rng}{- the nominal range for the scale [i.e., c(min,max)]}
+\item{rng}{\itemize{
+\item the nominal range for the scale \link{i.e., c(min,max)}
+}}
 
-\item{nticks}{- the desired number of ticks}
+\item{nticks}{\itemize{
+\item the desired number of ticks
+}}
 }
 \description{
 Function to calculate nice tick intervals for a scale

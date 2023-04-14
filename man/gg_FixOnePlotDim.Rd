@@ -14,31 +14,43 @@ gg_FixOnePlotDim(
 )
 }
 \arguments{
-\item{ggobj}{- a ggplot2 object (or possibly a gtable)}
+\item{ggobj}{\itemize{
+\item a ggplot2 object (or possibly a gtable)
+}}
 
-\item{fxdDim}{- value for the fixed dimension}
+\item{fxdDim}{\itemize{
+\item value for the fixed dimension
+}}
 
-\item{fitWidth}{- flag indicating fixed dimension is width}
+\item{fitWidth}{\itemize{
+\item flag indicating fixed dimension is width
+}}
 
-\item{units}{- character string with units for the fixed ddimension}
+\item{units}{\itemize{
+\item character string with units for the fixed ddimension
+}}
 
-\item{verbose}{- flag to print intermediate information}
+\item{verbose}{\itemize{
+\item flag to print intermediate information
+}}
 
-\item{...}{- not used}
+\item{...}{\itemize{
+\item not used
+}}
 }
 \value{
 a 2-element list (height, width) with the plot dimensions
 }
 \description{
-Function to calculate the missing dimension of a 
+Function to calculate the missing dimension of a
 ggplot2 object given the other dimension.
 }
 \details{
-Based on code from the DeLuciatoR::get_dims function. 
+Based on code from the DeLuciatoR::get_dims function.
 
 This function
-calculates the total height/width based on setting the total width/height (the 
-latter determines the size of a "null" unit for expandable grobs). 
-Another approach is taken in [gg_GetPlotDims], which fixes the size of null units,
+calculates the total height/width based on setting the total width/height (the
+latter determines the size of a "null" unit for expandable grobs).
+Another approach is taken in \link{gg_GetPlotDims}, which fixes the size of null units,
 then calculates the resulting height and width.
 }

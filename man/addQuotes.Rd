@@ -7,9 +7,13 @@
 addQuotes(str, qt = "'")
 }
 \arguments{
-\item{str}{- character vector to add quotes to}
+\item{str}{\itemize{
+\item character vector to add quotes to
+}}
 
-\item{qt}{- quote character}
+\item{qt}{\itemize{
+\item quote character
+}}
 }
 \value{
 character vector w/ elements in quotes

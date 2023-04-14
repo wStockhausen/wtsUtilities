@@ -13,24 +13,34 @@ unstackDataframe(
 )
 }
 \arguments{
-\item{dfr}{- the dataframe}
+\item{dfr}{\itemize{
+\item the dataframe
+}}
 
-\item{unstackCols}{- the names of the columns to unstack}
+\item{unstackCols}{\itemize{
+\item the names of the columns to unstack
+}}
 
-\item{factorCols}{- a vector of names of columns to use as factors}
+\item{factorCols}{\itemize{
+\item a vector of names of columns to use as factors
+}}
 
-\item{dropCols}{- a vector of names of columns to drop from the result}
+\item{dropCols}{\itemize{
+\item a vector of names of columns to drop from the result
+}}
 
-\item{debug}{- flag (T/F) to print out debugging info}
+\item{debug}{\itemize{
+\item flag (T/F) to print out debugging info
+}}
 }
 \value{
 dataframe with unstacked columns and factor levels
 }
 \description{
 Creates a new dataframe by "unstack"ing columns in the
-  input dataframe by factor level combinations in a set of other columns. Uses
-  \code{getFactorLevels} to find the unique factor level combinations from
-  the set of dataaframe columns identified as factors.
+input dataframe by factor level combinations in a set of other columns. Uses
+\code{getFactorLevels} to find the unique factor level combinations from
+the set of dataaframe columns identified as factors.
 }
 \details{
 None.

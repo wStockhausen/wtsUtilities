@@ -7,11 +7,17 @@
 gg_GetPlotLayout(p, keepAll = TRUE, verbose = 0)
 }
 \arguments{
-\item{p}{- ggplot2 or gtable object}
+\item{p}{\itemize{
+\item ggplot2 or gtable object
+}}
 
-\item{keepAll}{- flag (T/F) to keep all grobs (including grobs with physical size 0)}
+\item{keepAll}{\itemize{
+\item flag (T/F) to keep all grobs (including grobs with physical size 0)
+}}
 
-\item{verbose}{- flag (T/F) to print intermediate information}
+\item{verbose}{\itemize{
+\item flag (T/F) to print intermediate information
+}}
 }
 \value{
 returns a dataframe with columns reflecting the row/column locations and extents

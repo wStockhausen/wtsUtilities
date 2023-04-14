@@ -7,15 +7,25 @@
 standardize(x, cols = NULL, factors = NULL, idxCols = NULL, verbose = FALSE)
 }
 \arguments{
-\item{x}{- vector or dataframe to standardize}
+\item{x}{\itemize{
+\item vector or dataframe to standardize
+}}
 
-\item{cols}{- vector of column names to standardize (if x is a dataframe)}
+\item{cols}{\itemize{
+\item vector of column names to standardize (if x is a dataframe)
+}}
 
-\item{factors}{- vector of column names used as factors to standardize by (if x is a dataframe), or NULL}
+\item{factors}{\itemize{
+\item vector of column names used as factors to standardize by (if x is a dataframe), or NULL
+}}
 
-\item{idxCols}{- vector of column names used as indices for standardized values, or NULL}
+\item{idxCols}{\itemize{
+\item vector of column names used as indices for standardized values, or NULL
+}}
 
-\item{verbose}{- flag (T/F) to print diagnostic information}
+\item{verbose}{\itemize{
+\item flag (T/F) to print diagnostic information
+}}
 }
 \value{
 standardized vector as z-scores (same size as x), or dataframe

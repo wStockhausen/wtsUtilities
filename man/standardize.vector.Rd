@@ -7,7 +7,9 @@
 standardize.vector(x)
 }
 \arguments{
-\item{x}{- vector to standardize}
+\item{x}{\itemize{
+\item vector to standardize
+}}
 }
 \value{
 standardized vector as z-scores (same size as x)

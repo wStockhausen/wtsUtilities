@@ -7,9 +7,13 @@
 checkKeyword(chk, key)
 }
 \arguments{
-\item{chk}{- string to check}
+\item{chk}{\itemize{
+\item string to check
+}}
 
-\item{key}{- key word to check against}
+\item{key}{\itemize{
+\item key word to check against
+}}
 }
 \value{
 Nothing.

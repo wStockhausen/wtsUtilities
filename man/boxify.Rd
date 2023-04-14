@@ -7,11 +7,17 @@
 boxify(x, y, dx = NULL)
 }
 \arguments{
-\item{x}{- vector to expand}
+\item{x}{\itemize{
+\item vector to expand
+}}
 
-\item{y}{- vector to expand}
+\item{y}{\itemize{
+\item vector to expand
+}}
 
-\item{dx}{- increment along x-axis}
+\item{dx}{\itemize{
+\item increment along x-axis
+}}
 }
 \value{
 dataframe with expanded elements x,y
@@ -20,6 +26,6 @@ dataframe with expanded elements x,y
 Function to "boxify" x,y vectors for a "boxy" xy plot.
 }
 \details{
-This function expands each x,y pair to x+c(-1,0,0,1)*dx/2 and
-y*c(0,1,1,0), which provides a "box".
+This function expands each x,y pair to x+c(-1,0,0,1)\emph{dx/2 and
+y}c(0,1,1,0), which provides a "box".
 }

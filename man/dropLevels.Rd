@@ -7,9 +7,13 @@
 dropLevels(tbl, dropLevels = NULL)
 }
 \arguments{
-\item{tbl}{- dataframe to drop levels from}
+\item{tbl}{\itemize{
+\item dataframe to drop levels from
+}}
 
-\item{dropLevels}{- list by factor name of factor levels to drop}
+\item{dropLevels}{\itemize{
+\item list by factor name of factor levels to drop
+}}
 }
 \value{
 dataframe

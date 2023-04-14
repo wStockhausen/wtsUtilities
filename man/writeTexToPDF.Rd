@@ -15,19 +15,33 @@ writeTexToPDF(
 )
 }
 \arguments{
-\item{template_tex_str}{- character string of tex template}
+\item{template_tex_str}{\itemize{
+\item character string of tex template
+}}
 
-\item{template_tex_file}{- name of text file with tex template}
+\item{template_tex_file}{\itemize{
+\item name of text file with tex template
+}}
 
-\item{tex_str}{- the tex string to insert into the template}
+\item{tex_str}{\itemize{
+\item the tex string to insert into the template
+}}
 
-\item{tex_file}{- the name of a tex file with the tex string}
+\item{tex_file}{\itemize{
+\item the name of a tex file with the tex string
+}}
 
-\item{insertion_point}{- string identifying point at which to insert the tex string into the template}
+\item{insertion_point}{\itemize{
+\item string identifying point at which to insert the tex string into the template
+}}
 
-\item{pdf_name}{- the desired name for the resulting pdf file}
+\item{pdf_name}{\itemize{
+\item the desired name for the resulting pdf file
+}}
 
-\item{cleanup}{- flag to clean up intermediate files}
+\item{cleanup}{\itemize{
+\item flag to clean up intermediate files
+}}
 }
 \value{
 Invisibly, the tex string used to create the pdf document.
@@ -37,7 +51,7 @@ Function to create a pdf file from tex.
 }
 \details{
 This function inserts a tex string (in tex_str or tex_file) into a string version of a tex template
-(template_tex_str) or file (template_tex_file) and then converts the resulting tex file to a pdf. The insertion 
+(template_tex_str) or file (template_tex_file) and then converts the resulting tex file to a pdf. The insertion
 point in the template must be indicated by the value of \code{insertion_point}.
 
 To use a 'template' without a '&&tex_str' insertion marker, leave tex_str and tex_file as NULLs.

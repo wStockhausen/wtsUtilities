@@ -16,7 +16,7 @@
 #' 
 #' @return Invisibly, the tex string for the pdf document.
 #' 
-#' @details This function inserts the latex string \code{tbl_tex} returned by [tables::toLatex(tbl)] called on
+#' @details This function inserts the latex string \code{tbl_tex} returned by [tables::toLatex()] called on
 #' a table \code{tbl}into a tex template (\code{tex_template}) for a document. It then converts the resulting tex to a pdf using
 #' [writeTexToPDF()].
 #' 

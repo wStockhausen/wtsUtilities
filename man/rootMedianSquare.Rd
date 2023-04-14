@@ -7,9 +7,13 @@
 rootMedianSquare(y, na.rm = TRUE)
 }
 \arguments{
-\item{y}{- vector to compute rmsd for}
+\item{y}{\itemize{
+\item vector to compute rmsd for
+}}
 
-\item{na.rm}{- flag to remove NAs before calculating}
+\item{na.rm}{\itemize{
+\item flag to remove NAs before calculating
+}}
 }
 \value{
 the rmsd, or NA_real_ if y is all NAs

@@ -7,11 +7,17 @@
 rectify(x, y, dx = NULL)
 }
 \arguments{
-\item{x}{- vector to expand}
+\item{x}{\itemize{
+\item vector to expand
+}}
 
-\item{y}{- vector to expand}
+\item{y}{\itemize{
+\item vector to expand
+}}
 
-\item{dx}{- increment along x-axis}
+\item{dx}{\itemize{
+\item increment along x-axis
+}}
 }
 \value{
 dataframe with expanded elements xmin,xmax,ymin,ymax

@@ -7,9 +7,13 @@
 HarmMean(x, verbose = FALSE)
 }
 \arguments{
-\item{x}{- vector}
+\item{x}{\itemize{
+\item vector
+}}
 
-\item{verbose}{- flag to print diagnostic info}
+\item{verbose}{\itemize{
+\item flag to print diagnostic info
+}}
 }
 \value{
 a numeric value.

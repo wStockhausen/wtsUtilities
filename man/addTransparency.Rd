@@ -7,9 +7,13 @@
 addTransparency(clrs, alpha = 1)
 }
 \arguments{
-\item{clrs}{- vector of colors}
+\item{clrs}{\itemize{
+\item vector of colors
+}}
 
-\item{alpha}{- level of transparency to add (0-1)}
+\item{alpha}{\itemize{
+\item level of transparency to add (0-1)
+}}
 }
 \value{
 corresponding vector of colors with transparency added

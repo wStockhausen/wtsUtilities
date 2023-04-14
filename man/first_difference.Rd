@@ -7,7 +7,9 @@
 first_difference(x)
 }
 \arguments{
-\item{x}{- the vector to calculate the first difference for}
+\item{x}{\itemize{
+\item the vector to calculate the first difference for
+}}
 }
 \value{
 the vector of first differences

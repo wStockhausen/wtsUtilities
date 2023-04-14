@@ -11,11 +11,17 @@ selectFile(
 )
 }
 \arguments{
-\item{ext}{- extension for files to choose from}
+\item{ext}{\itemize{
+\item extension for files to choose from
+}}
 
-\item{caption}{- caption for file dialog (if file name not provided)}
+\item{caption}{\itemize{
+\item caption for file dialog (if file name not provided)
+}}
 
-\item{multi}{- flag (T/F) to allow multiple file selection}
+\item{multi}{\itemize{
+\item flag (T/F) to allow multiple file selection
+}}
 }
 \value{
 Selected file name(s). Returns NULL if the user canceled selection using the file dialog.

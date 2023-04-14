@@ -7,9 +7,13 @@
 parseDays(x, format = "MM/DD/YYYY")
 }
 \arguments{
-\item{x}{- the character vector to convert}
+\item{x}{\itemize{
+\item the character vector to convert
+}}
 
-\item{format}{- the date format (e.g. 'MM/DD/YYYY','DD-MON-YYYY')}
+\item{format}{\itemize{
+\item the date format (e.g. 'MM/DD/YYYY','DD-MON-YYYY')
+}}
 }
 \value{
 numeric vector of day of month (1-31)

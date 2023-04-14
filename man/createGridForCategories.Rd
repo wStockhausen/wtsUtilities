@@ -7,9 +7,13 @@
 createGridForCategories(xcats, ycats)
 }
 \arguments{
-\item{xcats}{- vector of categories for x-axis}
+\item{xcats}{\itemize{
+\item vector of categories for x-axis
+}}
 
-\item{ycats}{- vector of categories for y-axis}
+\item{ycats}{\itemize{
+\item vector of categories for y-axis
+}}
 }
 \value{
 a \code{\link[tibble]{tibble}}. See Details.
@@ -18,12 +22,12 @@ a \code{\link[tibble]{tibble}}. See Details.
 Function to create a \pkg{tibble} tibble describing a rectangular grid defined by two sets of categories.
 }
 \details{
-The returned tibble will have the following columns: 
+The returned tibble will have the following columns:
 \itemize{
- \item{xc - x-axis category labels (factor levels)}
- \item{yc - y-axis category labels (factor levels)}
- \item{id - id (character) for rectangle with center xc,yc [="(xc,yc)"]}
- \item{x - rectangle corner location (numeric) along x-axis}
- \item{y - rectangle corner location (numeric) along y-axis}
+\item{xc - x-axis category labels (factor levels)}
+\item{yc - y-axis category labels (factor levels)}
+\item{id - id (character) for rectangle with center xc,yc \link{="(xc,yc)"}}
+\item{x - rectangle corner location (numeric) along x-axis}
+\item{y - rectangle corner location (numeric) along y-axis}
 }
 }

@@ -15,19 +15,33 @@ gg_GetPlotDims(
 )
 }
 \arguments{
-\item{p}{- ggplot2 or derived gtable object}
+\item{p}{\itemize{
+\item ggplot2 or derived gtable object
+}}
 
-\item{unit}{- plot units ("in", "cm", etc.)}
+\item{unit}{\itemize{
+\item plot units ("in", "cm", etc.)
+}}
 
-\item{null}{- size of (x and y) null (resizeable) units (in plot units; overridden if null_x and null_y are given)}
+\item{null}{\itemize{
+\item size of (x and y) null (resizeable) units (in plot units; overridden if null_x and null_y are given)
+}}
 
-\item{null_x}{- size of horizontal null (resizeable) units (in plot units; must also specify null_y)}
+\item{null_x}{\itemize{
+\item size of horizontal null (resizeable) units (in plot units; must also specify null_y)
+}}
 
-\item{null_y}{- size of vertical (resizeable) units (in plot units; must also specify null_x)}
+\item{null_y}{\itemize{
+\item size of vertical (resizeable) units (in plot units; must also specify null_x)
+}}
 
-\item{returnAll}{- flag to return all information (not just dimensions)}
+\item{returnAll}{\itemize{
+\item flag to return all information (not just dimensions)
+}}
 
-\item{verbose}{- flag (0,1,2) to print intermediate information (0=off)}
+\item{verbose}{\itemize{
+\item flag (0,1,2) to print intermediate information (0=off)
+}}
 }
 \value{
 if returnAll is FALSE, returns a vector with plot width and height. Otherwise, it
@@ -43,7 +57,7 @@ tbl_matpp - tibble with intermediate information
 Function to get dimensions of a ggplot2 object or derived gtable.
 }
 \details{
-This function converts "null" (relative) scales in a ggplot2 object 
+This function converts "null" (relative) scales in a ggplot2 object
 (or derived gtable) to absolute scales.
 
 If either null_x or null_y is NULL, then the value of \code{null} is used for both. If

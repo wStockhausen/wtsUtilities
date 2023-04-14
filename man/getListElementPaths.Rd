@@ -7,13 +7,21 @@
 getListElementPaths(lst, top = ".", level = "", verbose = TRUE)
 }
 \arguments{
-\item{lst}{- list of interest}
+\item{lst}{\itemize{
+\item list of interest
+}}
 
-\item{top}{- dummy for recursion}
+\item{top}{\itemize{
+\item dummy for recursion
+}}
 
-\item{level}{- dummy for recursion}
+\item{level}{\itemize{
+\item dummy for recursion
+}}
 
-\item{verbose}{- flag (T/F) to print diagnostic output}
+\item{verbose}{\itemize{
+\item flag (T/F) to print diagnostic output
+}}
 }
 \value{
 character vector with paths to each non-NULL terminal element of the list, in unix format

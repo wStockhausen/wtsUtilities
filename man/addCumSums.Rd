@@ -7,25 +7,35 @@
 addCumSums(dfr, valCol, idxCol = NULL, factors = NULL, verbose = FALSE)
 }
 \arguments{
-\item{dfr}{- dataframe (or object that can be coerced to a dataframe)
-with values column to be cum-summed, index column, and factor levels}
+\item{dfr}{\itemize{
+\item dataframe (or object that can be coerced to a dataframe)
+with values column to be cum-summed, index column, and factor levels
+}}
 
-\item{valCol}{- name of values column to be cum-summed (as character string; e.g., "num")}
+\item{valCol}{\itemize{
+\item name of values column to be cum-summed (as character string; e.g., "num")
+}}
 
-\item{idxCol}{- name of "index" column to track cum-summing (as character string; e.g. "size", or NULL if none)}
+\item{idxCol}{\itemize{
+\item name of "index" column to track cum-summing (as character string; e.g. "size", or NULL if none)
+}}
 
-\item{factors}{- vector of names of columns in dfr to serve as factors in the summations (or NULL)}
+\item{factors}{\itemize{
+\item vector of names of columns in dfr to serve as factors in the summations (or NULL)
+}}
 
-\item{verbose}{- flag (T/F) to print diagnostic information}
+\item{verbose}{\itemize{
+\item flag (T/F) to print diagnostic information
+}}
 }
 \value{
 a dataframe of results with columns corresponding to the factors, the index column (if defined), the values column,
-a "nrmlzd" column, a "cumSum" column, and a "nrmSum" column. The latter three represent the normalized values 
-(summing to 1), the cumulative sum of the values, and the cumulative sum of the normalized values, where the 
+a "nrmlzd" column, a "cumSum" column, and a "nrmSum" column. The latter three represent the normalized values
+(summing to 1), the cumulative sum of the values, and the cumulative sum of the normalized values, where the
 normalization and sums are taken over each factor combination and the associated index set.
 }
 \description{
-Function to add cumulative sums (standard and normalized) of a column to a 
+Function to add cumulative sums (standard and normalized) of a column to a
 dataframe by an index column and set of factor columns.
 }
 \details{

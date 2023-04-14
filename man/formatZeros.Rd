@@ -7,13 +7,21 @@
 formatZeros(x, width = 2, format = "d", ...)
 }
 \arguments{
-\item{x}{- object that can be coerced to a numeric vector using as.numeric(as.vector(x))}
+\item{x}{\itemize{
+\item object that can be coerced to a numeric vector using as.numeric(as.vector(x))
+}}
 
-\item{width}{- width of formatted numbers}
+\item{width}{\itemize{
+\item width of formatted numbers
+}}
 
-\item{format}{- c-type format string (see "format" description in base R)}
+\item{format}{\itemize{
+\item c-type format string (see "format" description in base R)
+}}
 
-\item{...}{- additional inputs to "format"}
+\item{...}{\itemize{
+\item additional inputs to "format"
+}}
 }
 \value{
 character vector with blanks replaced by zeros

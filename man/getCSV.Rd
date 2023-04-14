@@ -7,18 +7,22 @@
 getCSV(csvfile = NULL, caption = "Select csv file to import")
 }
 \arguments{
-\item{csvfile}{- name of csv file to open}
+\item{csvfile}{\itemize{
+\item name of csv file to open
+}}
 
-\item{caption}{- caption for file dialog (if file name not provided)}
+\item{caption}{\itemize{
+\item caption for file dialog (if file name not provided)
+}}
 }
 \value{
 dataframe based on reading csv file. Returns NULL if no csv file
 was provided and the user canceled selection using the file dialog.
 }
 \description{
-Opens a csv file and returns it as a dataframe.\cr 
+Opens a csv file and returns it as a dataframe.\cr
 If a file name is not provided, the function displays a (tcltk)
-file chooser dialog.\cr 
+file chooser dialog.\cr
 Uses package "tcltk".
 }
 \details{

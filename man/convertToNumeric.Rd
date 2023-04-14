@@ -7,7 +7,9 @@
 convertToNumeric(x)
 }
 \arguments{
-\item{x}{- vector of values on which to perform conversion}
+\item{x}{\itemize{
+\item vector of values on which to perform conversion
+}}
 }
 \value{
 a vector of the same length as \code{x} converted to numeric
@@ -16,7 +18,7 @@ a vector of the same length as \code{x} converted to numeric
 Function to convert a character vector to numeric values.
 }
 \details{
-Values with commas are converted after stripping out commas. 
-Values with percent signs are converted after removing percent signs and 
+Values with commas are converted after stripping out commas.
+Values with percent signs are converted after removing percent signs and
 converting to fractions (i.e., dividing by 100). Otherwise, this works as \code{as.numeric(v)} would.
 }

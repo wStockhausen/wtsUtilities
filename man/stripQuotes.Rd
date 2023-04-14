@@ -7,9 +7,13 @@
 stripQuotes(str, qt = "'")
 }
 \arguments{
-\item{str}{- character vector to strip quotes from}
+\item{str}{\itemize{
+\item character vector to strip quotes from
+}}
 
-\item{qt}{- quote character}
+\item{qt}{\itemize{
+\item quote character
+}}
 }
 \value{
 character vector w/ quotes stripped out

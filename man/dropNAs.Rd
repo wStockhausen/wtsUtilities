@@ -7,14 +7,18 @@
 dropNAs(df, factors)
 }
 \arguments{
-\item{df}{- input dataframe (or object that can be cast to a dataframe)}
+\item{df}{\itemize{
+\item input dataframe (or object that can be cast to a dataframe)
+}}
 
-\item{factors}{- vector of desired column names from df to sort by}
+\item{factors}{\itemize{
+\item vector of desired column names from df to sort by
+}}
 }
 \value{
 dataframe without NAs in factor columns
 }
 \description{
 Removes all rows from a dataframe where the value in any column specified in "factors"
-      contains an NA.
+contains an NA.
 }

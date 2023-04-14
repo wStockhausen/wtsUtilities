@@ -7,13 +7,21 @@
 trimByResiduals(tbl, resids, n = 5, debug = TRUE)
 }
 \arguments{
-\item{tbl}{- dataframe with original data. row names should be 1:nrows BEFORE residuals are calculated}
+\item{tbl}{\itemize{
+\item dataframe with original data. row names should be 1:nrows BEFORE residuals are calculated
+}}
 
-\item{resids}{- vector of residuals to fit}
+\item{resids}{\itemize{
+\item vector of residuals to fit
+}}
 
-\item{n}{- number of rows to drop}
+\item{n}{\itemize{
+\item number of rows to drop
+}}
 
-\item{debug}{- flag to print diagnostics}
+\item{debug}{\itemize{
+\item flag to print diagnostics
+}}
 }
 \value{
 the trimmed dataframe

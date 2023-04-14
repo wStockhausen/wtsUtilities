@@ -12,18 +12,26 @@ addFilter(
 )
 }
 \arguments{
-\item{rowname}{- row name to add in filters matrix}
+\item{rowname}{\itemize{
+\item row name to add in filters matrix
+}}
 
-\item{desc}{- brief description of the file types}
+\item{desc}{\itemize{
+\item brief description of the file types
+}}
 
-\item{filter}{- extension filter ("*.ext")}
+\item{filter}{\itemize{
+\item extension filter ("*.ext")
+}}
 
-\item{Filters}{- matrix of filters to add to}
+\item{Filters}{\itemize{
+\item matrix of filters to add to
+}}
 }
 \value{
 augmented Filters matrix
 }
 \description{
-Add a filter to the file extension matrix 
+Add a filter to the file extension matrix
 (if it's not there already) used in file dialogs.
 }

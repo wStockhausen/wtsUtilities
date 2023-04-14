@@ -7,11 +7,17 @@
 getFolderStructure(path = ".", full.names = TRUE, recursive = TRUE)
 }
 \arguments{
-\item{path}{- path to toplevel folder}
+\item{path}{\itemize{
+\item path to toplevel folder
+}}
 
-\item{full.names}{- flag to return fullnames}
+\item{full.names}{\itemize{
+\item flag to return fullnames
+}}
 
-\item{recursive}{- flag to determine structure recursively}
+\item{recursive}{\itemize{
+\item flag to determine structure recursively
+}}
 }
 \value{
 text vector

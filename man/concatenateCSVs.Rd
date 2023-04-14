@@ -12,13 +12,21 @@ concatenateCSVs(
 )
 }
 \arguments{
-\item{caption}{- caption for file dialog box}
+\item{caption}{\itemize{
+\item caption for file dialog box
+}}
 
-\item{out.csv}{- filename of output csv file}
+\item{out.csv}{\itemize{
+\item filename of output csv file
+}}
 
-\item{out.dir}{- directory for output csv file}
+\item{out.dir}{\itemize{
+\item directory for output csv file
+}}
 
-\item{method}{- specifies method used for concatenation ('writeLines' or 'write.table')}
+\item{method}{\itemize{
+\item specifies method used for concatenation ('writeLines' or 'write.table')
+}}
 }
 \description{
 Function to concatenate a number of csv files (with identical column strucuture)

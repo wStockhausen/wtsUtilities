@@ -16,33 +16,47 @@ createColorScale(
 )
 }
 \arguments{
-\item{clrs}{- vector of colors defining the base scale (ignored if 'name' is given)}
+\item{clrs}{\itemize{
+\item vector of colors defining the base scale (ignored if 'name' is given)
+}}
 
-\item{name}{- name of base color scale (pre-defined: 'jet', 'coldhot', 'cold', and 'hot'; NULL for new scale)}
+\item{name}{\itemize{
+\item name of base color scale (pre-defined: 'jet', 'coldhot', 'cold', and 'hot'; NULL for new scale)
+}}
 
-\item{bias}{- ??}
+\item{bias}{\itemize{
+\item ??
+}}
 
-\item{space}{- colorspace ('rgb' or 'Lab')}
+\item{space}{\itemize{
+\item colorspace ('rgb' or 'Lab')
+}}
 
-\item{interpolate}{- interpolation scheme ('linear' or 'spline')}
+\item{interpolate}{\itemize{
+\item interpolation scheme ('linear' or 'spline')
+}}
 
-\item{showAsWheel}{- flag (T/F) to show the final palette as a colorwheel}
+\item{showAsWheel}{\itemize{
+\item flag (T/F) to show the final palette as a colorwheel
+}}
 
-\item{showAsBar}{- flag (T/F) to show final palette as a colorbar}
+\item{showAsBar}{\itemize{
+\item flag (T/F) to show final palette as a colorbar
+}}
 }
 \value{
 a function reflecting a color scale.
 }
 \description{
-Creates a function defining a color scale. The resulting function (e.g., 'scale') is used as \cr 
-\code{clr <- scale(x,mn=sclMin,mx=sclMax,alpha=alpha)} \cr 
-to return a color based on the color associated with value x (scaled into the interval sclMin to sclMax) 
+Creates a function defining a color scale. The resulting function (e.g., 'scale') is used as \cr
+\code{clr <- scale(x,mn=sclMin,mx=sclMax,alpha=alpha)} \cr
+to return a color based on the color associated with value x (scaled into the interval sclMin to sclMax)
 in the defined color scale, with transparency 'alpha'.
 }
 \details{
-New color scales can be created based on pre-defined color vectors using the following names: \cr 
-'jet', 'coldhot', 'cold', and 'hot' \cr 
-Specifying a pre-defined name eliminates the need to specify the 'clrs' color vector. \cr 
+New color scales can be created based on pre-defined color vectors using the following names: \cr
+'jet', 'coldhot', 'cold', and 'hot' \cr
+Specifying a pre-defined name eliminates the need to specify the 'clrs' color vector. \cr
 Arbitrary scales can created by specifying NULL for 'name' (the default) and providing a vector
 of colors to use to define the scale function. This uses the grDevices package function "colorRamp" to define
 the underlying color ramp used for the scale. Uses packages \code{graphics} and \code{grDevices].}

@@ -7,13 +7,19 @@
 computeStats.matrix(x, byCol = TRUE)
 }
 \arguments{
-\item{x}{- matrix}
+\item{x}{\itemize{
+\item matrix
+}}
 
-\item{byCol}{- compute stats by column (if TRUE)}
+\item{byCol}{\itemize{
+\item compute stats by column (if TRUE)
+}}
 }
 \value{
-- for x a matrix, returns matrix w/ rows with elements count, mean, stdev and cv.
-  Row names correspond to column (or row) names of original matrix.
+\itemize{
+\item for x a matrix, returns matrix w/ rows with elements count, mean, stdev and cv.
+Row names correspond to column (or row) names of original matrix.
+}
 }
 \description{
 Returns count, mean, stdev, and cv of the rows or columns of a matrix

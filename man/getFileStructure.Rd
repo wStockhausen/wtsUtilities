@@ -13,15 +13,25 @@ getFileStructure(
 )
 }
 \arguments{
-\item{path}{- path to toplevel folder}
+\item{path}{\itemize{
+\item path to toplevel folder
+}}
 
-\item{all.files}{- flag to include all files}
+\item{all.files}{\itemize{
+\item flag to include all files
+}}
 
-\item{full.names}{- flag to return fullnames}
+\item{full.names}{\itemize{
+\item flag to return fullnames
+}}
 
-\item{recursive}{- flag to determine structure recursively}
+\item{recursive}{\itemize{
+\item flag to determine structure recursively
+}}
 
-\item{include.dirs}{- flag to include folders}
+\item{include.dirs}{\itemize{
+\item flag to include folders
+}}
 }
 \value{
 text vector

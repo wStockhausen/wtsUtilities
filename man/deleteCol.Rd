@@ -7,9 +7,13 @@
 deleteCol(tbl, col)
 }
 \arguments{
-\item{tbl}{- dataframe or matrix from which to delete column}
+\item{tbl}{\itemize{
+\item dataframe or matrix from which to delete column
+}}
 
-\item{col}{- name of column to delete}
+\item{col}{\itemize{
+\item name of column to delete
+}}
 }
 \value{
 dataframe or matrix with column removed

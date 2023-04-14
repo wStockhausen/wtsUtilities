@@ -7,10 +7,14 @@
 computeStats.vector(x)
 }
 \arguments{
-\item{x}{- a vector of numbers (or object coerceable to a vector)}
+\item{x}{\itemize{
+\item a vector of numbers (or object coerceable to a vector)
+}}
 }
 \value{
-- vector with count, mean, stdev and cv as named elements
+\itemize{
+\item vector with count, mean, stdev and cv as named elements
+}
 }
 \description{
 Returns count, mean, stdev, and cv of vector x

@@ -7,9 +7,13 @@
 listPackageFiles(pkg, sub = NULL)
 }
 \arguments{
-\item{pkg}{- name of package}
+\item{pkg}{\itemize{
+\item name of package
+}}
 
-\item{sub}{- (optional) name of subfolder to check}
+\item{sub}{\itemize{
+\item (optional) name of subfolder to check
+}}
 }
 \value{
 a character vector of file paths relative to the package folder or sub-folder.
@@ -19,6 +23,6 @@ Function to get a vector of filenames associated with a package.
 }
 \details{
 If \code{sub} is NULL, the names of all folders/files included in the package are returned.
-Note, though, that this does NOT return file names from the package source, but from the compiled 
+Note, though, that this does NOT return file names from the package source, but from the compiled
 package.
 }

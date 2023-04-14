@@ -1,8 +1,8 @@
 Package: wtsUtilities
 Type: Package
 Title: Collection of generic utility functions developed by William Stockhausen
-Version: 2023.03.20
-Date: 2023-03-20
+Version: 2023.04.14
+Date: 2023-04-14
 Author: William T. Stockhausen
 Maintainer: William T. Stockhausen <william.stockhausen@noaa.gov>
 Description: Collection of generic utility functions.
@@ -15,11 +15,12 @@ Imports:
     grDevices (>= 3.2.1),
     grid (>= 4.0.0),
     magrittr,
+    scales,
     sqldf,
     stats,
     stringr (>= 1.0.0),
     tibble,
     tcltk (>= 3.2.1),
     utils
-Roxygen2: list(markdown=TRUE)
+Roxygen: list(markdown=TRUE)
 RoxygenNote: 7.2.3

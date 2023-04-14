@@ -7,7 +7,9 @@
 isBlankString(str)
 }
 \arguments{
-\item{str}{- character string to test}
+\item{str}{\itemize{
+\item character string to test
+}}
 }
 \value{
 TRUE or FALSE.
@@ -16,6 +18,6 @@ TRUE or FALSE.
 Function to test if character string is only whitespace (i.e., blank).
 }
 \details{
-Returns TRUE if \code{stringr::str_squish(str)} reduces \code{str} to "", otherwise FALSE. 
+Returns TRUE if \code{stringr::str_squish(str)} reduces \code{str} to "", otherwise FALSE.
 Also returns FALSE if \code{str} is not a length 1 character vector.
 }

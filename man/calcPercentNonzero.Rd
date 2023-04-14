@@ -8,11 +8,17 @@ by factor levels}
 calcPercentNonzero(dfr, vars = NULL, factors = NULL)
 }
 \arguments{
-\item{dfr}{- dataframe with data in columns}
+\item{dfr}{\itemize{
+\item dataframe with data in columns
+}}
 
-\item{vars}{- vector of columns (names) on which to calculate percentages}
+\item{vars}{\itemize{
+\item vector of columns (names) on which to calculate percentages
+}}
 
-\item{factors}{- vector of columns to use as factors}
+\item{factors}{\itemize{
+\item vector of columns to use as factors
+}}
 }
 \value{
 a dataframe

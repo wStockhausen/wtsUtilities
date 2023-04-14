@@ -7,14 +7,22 @@
 computeStats.dataframe(x, cols.factors = 1, cols.vars = 2)
 }
 \arguments{
-\item{x}{- a dataframe}
+\item{x}{\itemize{
+\item a dataframe
+}}
 
-\item{cols.factors}{- vector identifying columns to use as factors}
+\item{cols.factors}{\itemize{
+\item vector identifying columns to use as factors
+}}
 
-\item{cols.vars}{- vector identifying columns to use as variables}
+\item{cols.vars}{\itemize{
+\item vector identifying columns to use as variables
+}}
 }
 \value{
-- NULL (not yet implemented)
+\itemize{
+\item NULL (not yet implemented)
+}
 }
 \description{
 Returns count, mean, stdev, and cv of a dataframe

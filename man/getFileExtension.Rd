@@ -7,10 +7,14 @@
 getFileExtension(fn)
 }
 \arguments{
-\item{fn}{- the filename}
+\item{fn}{\itemize{
+\item the filename
+}}
 }
 \value{
-- the extension (without the "."), or NA if no extension
+\itemize{
+\item the extension (without the "."), or NA if no extension
+}
 }
 \description{
 Function to get the extension from a filename

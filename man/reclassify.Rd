@@ -7,9 +7,13 @@
 reclassify(x, rcl)
 }
 \arguments{
-\item{x}{- vector with values to reclassify}
+\item{x}{\itemize{
+\item vector with values to reclassify
+}}
 
-\item{rcl}{- list of lists specifying reclassifications}
+\item{rcl}{\itemize{
+\item list of lists specifying reclassifications
+}}
 }
 \value{
 vector of length(x)
@@ -19,6 +23,6 @@ Function to reclassify values in a vector
 }
 \details{
 "rcl" is a list of lists. Each sublist is of the form list(new=new, old=old),
-where the value "new" is the new classification assigned to each element in "x" 
+where the value "new" is the new classification assigned to each element in "x"
 that is found in the vector "old".
 }

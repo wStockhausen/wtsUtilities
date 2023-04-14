@@ -7,11 +7,17 @@
 keepCols(tbl, cols, debug = FALSE)
 }
 \arguments{
-\item{tbl}{- dataframe with columns to keep or discard}
+\item{tbl}{\itemize{
+\item dataframe with columns to keep or discard
+}}
 
-\item{cols}{- vector of column names to keep}
+\item{cols}{\itemize{
+\item vector of column names to keep
+}}
 
-\item{debug}{- flag (T/F) to print debugging info}
+\item{debug}{\itemize{
+\item flag (T/F) to print debugging info
+}}
 }
 \value{
 a dataframe with columns to be kept, or NULL if no column names matched.
@@ -20,6 +26,7 @@ a dataframe with columns to be kept, or NULL if no column names matched.
 Function to keep columns from a dataframe
 }
 \details{
-Creates a dataframe containing the specified subset of columns of input dataframe "tbl" by
-      keeping only columns matching the specified names.
+\if{html}{\out{<div class="sourceCode">}}\preformatted{  Creates a dataframe containing the specified subset of columns of input dataframe "tbl" by
+  keeping only columns matching the specified names.
+}\if{html}{\out{</div>}}
 }

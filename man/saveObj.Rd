@@ -7,9 +7,13 @@
 saveObj(obj, fn)
 }
 \arguments{
-\item{obj}{- object to save}
+\item{obj}{\itemize{
+\item object to save
+}}
 
-\item{fn}{- filename to which to save the R object}
+\item{fn}{\itemize{
+\item filename to which to save the R object
+}}
 }
 \description{
 Function to save an R object to an RData file with name 'obj'.

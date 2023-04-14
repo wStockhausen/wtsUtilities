@@ -7,11 +7,17 @@
 aggregateDataframe(dfr, factors = NULL, vars = NULL)
 }
 \arguments{
-\item{dfr}{- dataframe}
+\item{dfr}{\itemize{
+\item dataframe
+}}
 
-\item{factors}{- factors to aggregate by}
+\item{factors}{\itemize{
+\item factors to aggregate by
+}}
 
-\item{vars}{- variable(s) to aggregate}
+\item{vars}{\itemize{
+\item variable(s) to aggregate
+}}
 }
 \value{
 dataframe with vars aggregated by levels of "factor" columns

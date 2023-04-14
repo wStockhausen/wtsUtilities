@@ -7,9 +7,13 @@
 pause(t, debug = FALSE)
 }
 \arguments{
-\item{t}{- number of seconds to pause}
+\item{t}{\itemize{
+\item number of seconds to pause
+}}
 
-\item{debug}{- flag (T/F) to print debugging info}
+\item{debug}{\itemize{
+\item flag (T/F) to print debugging info
+}}
 }
 \description{
 Runs a loop that causes the system to pause operation for 't' seconds

@@ -7,7 +7,9 @@
 getIntervalLimits(xs)
 }
 \arguments{
-\item{xs}{- the vector of interval midpoints}
+\item{xs}{\itemize{
+\item the vector of interval midpoints
+}}
 }
 \value{
 the vector of interval limits (cutpoints)

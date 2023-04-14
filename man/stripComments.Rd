@@ -7,9 +7,13 @@
 stripComments(strv, comment = "#")
 }
 \arguments{
-\item{strv}{- character vector to strip comments from}
+\item{strv}{\itemize{
+\item character vector to strip comments from
+}}
 
-\item{comment}{- character indicating remaining text is a comment}
+\item{comment}{\itemize{
+\item character indicating remaining text is a comment
+}}
 }
 \value{
 character vector with comments removed.

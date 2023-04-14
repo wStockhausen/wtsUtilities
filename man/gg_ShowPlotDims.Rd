@@ -17,23 +17,41 @@ gg_ShowPlotDims(
 )
 }
 \arguments{
-\item{p}{- ggplot2 or derived gtable object}
+\item{p}{\itemize{
+\item ggplot2 or derived gtable object
+}}
 
-\item{unit}{- plot units ("in", "cm", etc.)}
+\item{unit}{\itemize{
+\item plot units ("in", "cm", etc.)
+}}
 
-\item{null}{- size of (x and y) null (resizeable) units (in plot units; overridden if null_x and null_y are given)}
+\item{null}{\itemize{
+\item size of (x and y) null (resizeable) units (in plot units; overridden if null_x and null_y are given)
+}}
 
-\item{null_x}{- size of horizontal null (resizeable) units (in plot units; must also specify null_y)}
+\item{null_x}{\itemize{
+\item size of horizontal null (resizeable) units (in plot units; must also specify null_y)
+}}
 
-\item{null_y}{- size of vertical (resizeable) units (in plot units; must also specify null_x)}
+\item{null_y}{\itemize{
+\item size of vertical (resizeable) units (in plot units; must also specify null_x)
+}}
 
-\item{xtick}{- x-axis tick separation}
+\item{xtick}{\itemize{
+\item x-axis tick separation
+}}
 
-\item{ytick}{- y-axis tick separation}
+\item{ytick}{\itemize{
+\item y-axis tick separation
+}}
 
-\item{showPlot}{- flag (T/F) to print plots}
+\item{showPlot}{\itemize{
+\item flag (T/F) to print plots
+}}
 
-\item{verbose}{- flag (0,1,2) to print intermediate information (0=off)}
+\item{verbose}{\itemize{
+\item flag (0,1,2) to print intermediate information (0=off)
+}}
 }
 \value{
 invisibly returns a list with elements
@@ -49,7 +67,7 @@ tbl_matpp - tibble with intermediate information (if verbose>1)
 Function to determine and show dimensions of a ggplot2 object or derived gtable.
 }
 \details{
-This function converts "null" (relative) scales in a ggplot2 object 
+This function converts "null" (relative) scales in a ggplot2 object
 (or derived gtable) to absolute scales
 and creates a rectangle plot of the resulting components with axes reflecting
 the absolute scales.

@@ -18,25 +18,45 @@ writeTableToPDF(
 )
 }
 \arguments{
-\item{tbl_tex}{- the tex string from tables::toLatex(tabular)}
+\item{tbl_tex}{\itemize{
+\item the tex string from tables::toLatex(tabular)
+}}
 
-\item{template_tex}{- character string of tex template}
+\item{template_tex}{\itemize{
+\item character string of tex template
+}}
 
-\item{pdf_name}{- the desired name for the resulting pdf file}
+\item{pdf_name}{\itemize{
+\item the desired name for the resulting pdf file
+}}
 
-\item{insertion_point}{- string identifying point at which to insert the tex string into the template}
+\item{insertion_point}{\itemize{
+\item string identifying point at which to insert the tex string into the template
+}}
 
-\item{pageheight}{- page height (number, in units given by \code{units})}
+\item{pageheight}{\itemize{
+\item page height (number, in units given by \code{units})
+}}
 
-\item{pagewidth}{- page width (number, in units given by \code{units})}
+\item{pagewidth}{\itemize{
+\item page width (number, in units given by \code{units})
+}}
 
-\item{margin}{- margin (number, in units given by \code{units})}
+\item{margin}{\itemize{
+\item margin (number, in units given by \code{units})
+}}
 
-\item{orientation}{- "portrait" or "landscape"}
+\item{orientation}{\itemize{
+\item "portrait" or "landscape"
+}}
 
-\item{units}{- units for measurements (e.g., "in" or "cm")}
+\item{units}{\itemize{
+\item units for measurements (e.g., "in" or "cm")
+}}
 
-\item{cleanup}{- flag to clean up intermediate files}
+\item{cleanup}{\itemize{
+\item flag to clean up intermediate files
+}}
 }
 \value{
 Invisibly, the tex string for the pdf document.
@@ -45,9 +65,9 @@ Invisibly, the tex string for the pdf document.
 Function to create a pdf file from latex from a tabular object.
 }
 \details{
-This function inserts the latex string \code{tbl_tex} returned by [tables::toLatex(tbl)] called on
+This function inserts the latex string \code{tbl_tex} returned by \code{\link[tables:latex.tabular]{tables::toLatex()}} called on
 a table \code{tbl}into a tex template (\code{tex_template}) for a document. It then converts the resulting tex to a pdf using
-[writeTexToPDF()].
+\code{\link[=writeTexToPDF]{writeTexToPDF()}}.
 
 The insertion point in the template is indicated by the value of \code{insertion_point}. A default template is provided in
 \code{tex/templateForTable.tex}.

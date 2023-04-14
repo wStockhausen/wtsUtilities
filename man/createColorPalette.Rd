@@ -22,31 +22,57 @@ createColorPalette(
 )
 }
 \arguments{
-\item{name}{- name of base palette to use (pre-defined: 'rainbow','heat','topo', 'cm', and 'jet'; 'ramp' for new palette)}
+\item{name}{\itemize{
+\item name of base palette to use (pre-defined: 'rainbow','heat','topo', 'cm', and 'jet'; 'ramp' for new palette)
+}}
 
-\item{n}{- number of colors to include in palette}
+\item{n}{\itemize{
+\item number of colors to include in palette
+}}
 
-\item{alpha}{- transparency (0-1)}
+\item{alpha}{\itemize{
+\item transparency (0-1)
+}}
 
-\item{start}{- value associated with 1st color in palette}
+\item{start}{\itemize{
+\item value associated with 1st color in palette
+}}
 
-\item{end}{- value associated with last color in palette}
+\item{end}{\itemize{
+\item value associated with last color in palette
+}}
 
-\item{s}{- parameter passed to "rainbow" function}
+\item{s}{\itemize{
+\item parameter passed to "rainbow" function
+}}
 
-\item{v}{- parameter passed to "rainbow" function}
+\item{v}{\itemize{
+\item parameter passed to "rainbow" function
+}}
 
-\item{bias}{- ??}
+\item{bias}{\itemize{
+\item ??
+}}
 
-\item{space}{- colorspace ('rgb' or 'Lab')}
+\item{space}{\itemize{
+\item colorspace ('rgb' or 'Lab')
+}}
 
-\item{interpolate}{- interpolation scheme ('linear' or 'spline')}
+\item{interpolate}{\itemize{
+\item interpolation scheme ('linear' or 'spline')
+}}
 
-\item{clrs}{- vector of colors defining base palette}
+\item{clrs}{\itemize{
+\item vector of colors defining base palette
+}}
 
-\item{showAsWheel}{- flag (T/F) to show the final palette as a colorwheel}
+\item{showAsWheel}{\itemize{
+\item flag (T/F) to show the final palette as a colorwheel
+}}
 
-\item{showAsBar}{- flag (T/F) to show final palette as a colorbar}
+\item{showAsBar}{\itemize{
+\item flag (T/F) to show final palette as a colorbar
+}}
 }
 \value{
 a color palette
@@ -57,8 +83,8 @@ Creates a color palette (or returns a pre-defined one).
 \details{
 New (interpolated) palettes can be created based on the following pre-defined palettes: \cr
 'rainbow', 'heat', 'topo', 'cm', and 'jet'\cr
-Specifying a pre-defined palette eliminates the need to specify the 'clrs' color vector.\cr 
+Specifying a pre-defined palette eliminates the need to specify the 'clrs' color vector.\cr
 Palettes can created based on arbitrary base palettes by specifying name as 'ramp' and providing a vector
-of colors to use as the base palette (via clrs). This approach uses the graphics function "colorRampPalette" 
+of colors to use as the base palette (via clrs). This approach uses the graphics function "colorRampPalette"
 to create the palette.
 }

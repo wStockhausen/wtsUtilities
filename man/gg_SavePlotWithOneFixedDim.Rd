@@ -15,24 +15,38 @@ gg_SavePlotWithOneFixedDim(
 )
 }
 \arguments{
-\item{filename}{- file name for output}
+\item{filename}{\itemize{
+\item file name for output
+}}
 
-\item{plot}{- ggplot2 plot object to save (defaults to last plot)}
+\item{plot}{\itemize{
+\item ggplot2 plot object to save (defaults to last plot)
+}}
 
-\item{fxdDim}{- value for the fixed dimension}
+\item{fxdDim}{\itemize{
+\item value for the fixed dimension
+}}
 
-\item{fitWidth}{- flag indicating fixed dimension is width (default is TRUE)}
+\item{fitWidth}{\itemize{
+\item flag indicating fixed dimension is width (default is TRUE)
+}}
 
-\item{units}{- character string with units for the fixed dimension}
+\item{units}{\itemize{
+\item character string with units for the fixed dimension
+}}
 
-\item{device}{- graphics device to print to}
+\item{device}{\itemize{
+\item graphics device to print to
+}}
 
-\item{dpi}{- resolution (default=200 dpi)}
+\item{dpi}{\itemize{
+\item resolution (default=200 dpi)
+}}
 }
 \description{
-Function to save a ggplot2 plot to a file, 
+Function to save a ggplot2 plot to a file,
 specifying the size of one dimension.
 }
 \details{
-Uses [gg_FixOnePlotDim] to determine the value of the missing plot dimension.
+Uses \link{gg_FixOnePlotDim} to determine the value of the missing plot dimension.
 }

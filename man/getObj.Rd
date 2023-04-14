@@ -7,7 +7,9 @@
 getObj(fn)
 }
 \arguments{
-\item{fn}{- filename from which to extract R object}
+\item{fn}{\itemize{
+\item filename from which to extract R object
+}}
 }
 \value{
 the object

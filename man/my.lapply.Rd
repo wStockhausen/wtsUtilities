@@ -7,11 +7,17 @@
 my.lapply(X, FUN, ...)
 }
 \arguments{
-\item{X}{- data to apply function to (coerced to list if necessary)}
+\item{X}{\itemize{
+\item data to apply function to (coerced to list if necessary)
+}}
 
-\item{FUN}{- function to apply to X}
+\item{FUN}{\itemize{
+\item function to apply to X
+}}
 
-\item{...}{- other inputs to FUN}
+\item{...}{\itemize{
+\item other inputs to FUN
+}}
 }
 \value{
 result of lapply'ing function to X
