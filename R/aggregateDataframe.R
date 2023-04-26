@@ -16,8 +16,9 @@
 #'@export
 #'
 aggregateDataframe<-function(dfr,
-                                factors=NULL,
-                                vars=NULL){
+                             factors=NULL,
+                             vars=NULL,
+                             verbose=FALSE){
     if (is.null(factors)){
         stop('Must supply a vector of column names to aggregate by.\nAborting...\n');
     }
@@ -37,7 +38,8 @@ aggregateDataframe<-function(dfr,
                 &&facs;"
     query<-gsub('&&facs',facs1,query,fixed=TRUE);
     query<-gsub('&&vars',vars1,query,fixed=TRUE);
-    agg<-sqldf(query);
+    if (verbose) cat(query,"\n");
+    agg<-sqldf::sqldf(query);
     return(agg);
 }
     

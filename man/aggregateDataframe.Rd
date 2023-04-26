@@ -4,7 +4,7 @@
 \alias{aggregateDataframe}
 \title{Aggregate a dataframe according to "factor" levels.}
 \usage{
-aggregateDataframe(dfr, factors = NULL, vars = NULL)
+aggregateDataframe(dfr, factors = NULL, vars = NULL, verbose = FALSE)
 }
 \arguments{
 \item{dfr}{\itemize{
