@@ -30,6 +30,9 @@ saveObj<-function(obj,fn){
 #' @export
 #' 
 getObj<-function(fn){
+    if (!file.exists(fn)){
+        stop(paste0("File '",fn,"' does not exist!"))
+    }
     load(file=fn,envir = environment());
     return(obj);
 }
