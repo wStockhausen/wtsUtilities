@@ -34,7 +34,7 @@ The returned tibble will have the following columns:
 \itemize{
 \item{xc - rectangle center location along x-axis}
 \item{yc - rectangle center location along y-axis}
-\item{id - id (character) for rectangle with center xc,yc \link{="(xc,yc)"}}
+\item{id - id (character) for rectangle with center xc,yc [="(xc,yc)"]}
 \item{x - rectangle corner location along x-axis}
 \item{y - rectangle corner location along y-axis}
 }

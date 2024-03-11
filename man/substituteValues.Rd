@@ -8,7 +8,7 @@ substituteValues(v, orig, finl)
 }
 \arguments{
 \item{v}{\itemize{
-\item vector of values on which to perform substition
+\item vector of values on which to perform substitution
 }}
 
 \item{orig}{\itemize{
@@ -27,6 +27,6 @@ Function to substitute final values for original values in a vector.
 }
 \details{
 original and final values are matched by position in the respective areas (i.e.
-finl\link{j} is substituted for orig\link{j} in v wherever orig\link{j} occurs). Values in \code{v} that
+finl[j] is substituted for orig[j] in v wherever orig[j] occurs). Values in \code{v} that
 are not in \code{orig} are not changed in the result.
 }

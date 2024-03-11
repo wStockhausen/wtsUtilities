@@ -8,7 +8,7 @@ computeTickInterval(rng, nticks = 5)
 }
 \arguments{
 \item{rng}{\itemize{
-\item the nominal range for the scale \link{i.e., c(min,max)}
+\item the nominal range for the scale [i.e., c(min,max)]
 }}
 
 \item{nticks}{\itemize{

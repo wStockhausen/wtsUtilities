@@ -18,6 +18,10 @@ aggregateDataframe(dfr, factors = NULL, vars = NULL, verbose = FALSE)
 \item{vars}{\itemize{
 \item variable(s) to aggregate
 }}
+
+\item{verbose}{\itemize{
+\item flag to print extra info
+}}
 }
 \value{
 dataframe with vars aggregated by levels of "factor" columns

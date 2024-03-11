@@ -20,5 +20,5 @@ Convenience function to sum with NAs removed.
 }
 \details{
 If x is numeric, then \code{Sum(x)} is equivalent to \code{sum(x,na.rm=TRUE)}. If x is a character vector,
-then \code{Sum(x)} returns x\link{1}. If x is logical, then \code{Sum(x)} is equivalent to \code{any(x,na.rm=TRUE)}
+then \code{Sum(x)} returns x[1]. If x is logical, then \code{Sum(x)} is equivalent to \code{any(x,na.rm=TRUE)}
 }

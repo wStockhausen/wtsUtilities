@@ -4,7 +4,7 @@
 #'@description Function to calculate nice tick intervals for a scale
 #'based on a range and the desired number of ticks.
 #'
-#'@param rng - the nominal range for the scale [i.e., c(min,max)]
+#'@param rng - the nominal range for the scale \[i.e., c(min,max)\]
 #'@param nticks - the desired number of ticks
 #'
 #'@details None.

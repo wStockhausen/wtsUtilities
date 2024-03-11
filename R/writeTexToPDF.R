@@ -24,6 +24,8 @@
 #' tex_file is NULL).
 #' 
 #' @import stringr
+#' @importFrom grDevices dev.off png
+#' @importFrom utils glob2rx
 #' 
 #' @export
 #' 

@@ -32,9 +32,9 @@ Function to create a vector of colors based on a color scale.
 \details{
 Available color scales (and default parameters) are\cr
 \itemize{
-\item{"hue" - ...: none (see \code{\link[scales:hue_pal]{scales::hue_pal()}})}
-\item{"brewer" - ...: type="seq", palette=1, direction=1 (see \code{\link[scales:brewer_pal]{scales::brewer_pal()}})}
-\item{"viridis" - ...: alpha=1,begin=0,end=0,direction=1,option='D' (see \code{\link[scales:viridis_pal]{scales::viridis_pal()}})}
+\item{"hue" - ...: none (see \code{\link[scales:pal_hue]{scales::hue_pal()}})}
+\item{"brewer" - ...: type="seq", palette=1, direction=1 (see \code{\link[scales:pal_brewer]{scales::brewer_pal()}})}
+\item{"viridis" - ...: alpha=1,begin=0,end=0,direction=1,option='D' (see \code{\link[scales:pal_viridis]{scales::viridis_pal()}})}
 }
 }
 \examples{
@@ -44,5 +44,5 @@ gg_CreateColors(3,"viridis",show=TRUE);
 
 }
 \seealso{
-\code{\link[scales:hue_pal]{scales::hue_pal()}}, \code{\link[scales:brewer_pal]{scales::brewer_pal()}},\code{\link[scales:viridis_pal]{scales::viridis_pal()}}
+\code{\link[scales:pal_hue]{scales::hue_pal()}}, \code{\link[scales:pal_brewer]{scales::brewer_pal()}},\code{\link[scales:pal_viridis]{scales::viridis_pal()}}
 }

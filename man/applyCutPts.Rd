@@ -21,11 +21,11 @@ applyCutPts(
 }}
 
 \item{truncate.low}{\itemize{
-\item flag to truncate below first cutpoint (i.e., cutpt\link{1}<-0)
+\item flag to truncate below first cutpoint (i.e., cutpt[1]<-0)
 }}
 
 \item{truncate.high}{\itemize{
-\item flag to truncate above last cutpoint (i.e., cutpt\link{last}<-Inf)
+\item flag to truncate above last cutpoint (i.e., cutpt[last]<-Inf)
 }}
 }
 \value{

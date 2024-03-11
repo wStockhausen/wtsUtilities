@@ -5,7 +5,8 @@
 #'
 #'@param dfr - dataframe
 #'@param factors - factors to aggregate by
-#'@param vars - variable(s) to aggregate
+#'@param vars - variable(s) to aggregate 
+#'@param verbose - flag to print extra info
 #'
 #'@return dataframe with vars aggregated by levels of "factor" columns
 #'

@@ -34,6 +34,7 @@
 #' @import dplyr
 #' @import magrittr
 #' @import ggplot2 
+#' @importFrom utils View
 #' 
 #' @author William Stockhausen (william.stockhausen@noaa.gov)
 #' 

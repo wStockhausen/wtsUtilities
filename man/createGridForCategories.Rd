@@ -26,7 +26,7 @@ The returned tibble will have the following columns:
 \itemize{
 \item{xc - x-axis category labels (factor levels)}
 \item{yc - y-axis category labels (factor levels)}
-\item{id - id (character) for rectangle with center xc,yc \link{="(xc,yc)"}}
+\item{id - id (character) for rectangle with center xc,yc [="(xc,yc)"]}
 \item{x - rectangle corner location (numeric) along x-axis}
 \item{y - rectangle corner location (numeric) along y-axis}
 }

@@ -23,6 +23,7 @@
 #' 
 #' @import grid
 #' @import ggplot2
+#' @importFrom utils packageVersion
 #'
 #' @export
 #' 
