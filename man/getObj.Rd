@@ -2,22 +2,29 @@
 % Please edit documentation in R/getObj_saveObj.R
 \name{getObj}
 \alias{getObj}
-\title{Get saved object from an RData file}
+\title{Get a saved object from an RData file}
 \usage{
-getObj(fn)
+getObj(fn, obj_name = NULL)
 }
 \arguments{
 \item{fn}{\itemize{
 \item filename from which to extract R object
 }}
+
+\item{obj_name}{\itemize{
+\item optional name (as 1-element character vector) of object to get
+}}
 }
 \value{
-the object
+an R object
 }
 \description{
-Function to get a saved object ('obj') from an RData file.
+Function to get a saved object from an RData file.
 }
 \details{
-The original R object must have been saved with the name 'obj' (see
-\code{\link{saveObj}} for a function to do so).
+The RData file may contain multiple R objects, but the function will return
+only a single object. The RData file is "loaded" into a new environment. If \code{obj_name} is
+not NULL, then the object with that name is returned. Otherwise, a vector of
+object names is obtained using ls() and the object corresponding to the first name
+in the list is returned.
 }
