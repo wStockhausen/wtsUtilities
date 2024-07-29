@@ -38,8 +38,7 @@ getObj<-function(fn,obj_name=NULL){
         stop(paste0("File '",fn,"' does not exist!"))
     }
     
-    load(file=fn,envir=environment());#--load file
-    obj_names = ls();                 #--get object names
+    obj_names = load(file=fn,envir=environment());#--load file
     #--determine object name (if not give)
     if (!is.null(obj_name)) {
         #--return object associated with obj_name
@@ -49,9 +48,11 @@ getObj<-function(fn,obj_name=NULL){
             return(NULL);
         }
     } else {
+        #--return object associated with first object name
         obj_name = obj_names[1];
     }
-    #--make copy of object as `obj` to return
+    if (obj_name=="obj") return(obj);#--object `obj` already exists
+    #--make copy of requested object as `obj` to return
     eval(str2expression(text=paste0("obj=",obj_name)));
     return(obj);
 }
