@@ -4,7 +4,14 @@
 \alias{calcColumnDiffs}
 \title{Calculate differences between dataframe columns by row}
 \usage{
-calcColumnDiffs(dfr, col, cols = NULL, adjacent = FALSE)
+calcColumnDiffs(
+  dfr,
+  col,
+  cols = NULL,
+  adjacent = FALSE,
+  dropCols = TRUE,
+  dropBase = FALSE
+)
 }
 \arguments{
 \item{dfr}{\itemize{
@@ -22,16 +29,24 @@ calcColumnDiffs(dfr, col, cols = NULL, adjacent = FALSE)
 \item{adjacent}{\itemize{
 \item flag to compute differences between "adjacent" columns (default=FALSE)
 }}
+
+\item{dropCols}{\itemize{
+\item flag to drop original columns involved in differences (default=TRUE)
+}}
+
+\item{dropBase}{\itemize{
+\item flag to drop base column involved in differences (default=FALSE)
+}}
 }
 \value{
-copy of input dataframe with extra columns representing column differences
+copy of input dataframe, with columns inv with extra columns representing column differences
 }
 \description{
 Function to calculate differences between dataframe columns by row.
 }
 \details{
-If \code{cols} is NULL, then differences will be commputed as if \code{cols} was
+If \code{cols} is NULL, then differences will be computed as if \code{cols} was
 the vector of names of columns to the "right" of \code{col}. If \code{adjacent=FALSE},
 then all differences are relative to \code{col} as the base. Otherwise, after the
-first difference, the base column is sequentially moves through those in \code{cols}.
+first difference, the base column is sequentially moved through those in \code{cols}.
 }
