@@ -9,7 +9,7 @@
 #' @return relative path as string
 #' 
 #' @details See [normalizePath] for more information on \code{mustWork}. The code 
-#' for this function is essentially a copy of that for [sen2r::abs2rel].
+#' for this function is essentially a copy `abs2rel` from https://github.com/ranghetti/sen2r.
 #' 
 #' @export
 #' 

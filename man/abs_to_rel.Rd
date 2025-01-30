@@ -28,5 +28,5 @@ Function to convert an absolute path to relative one.
 }
 \details{
 See \link{normalizePath} for more information on \code{mustWork}. The code
-for this function is essentially a copy of that for \link[sen2r:abs2rel]{sen2r::abs2rel}.
+for this function is essentially a copy \code{abs2rel} from https://github.com/ranghetti/sen2r.
 }
