@@ -15,6 +15,8 @@
 #' @import rlang
 #' @import tidyr
 #' @import tidyselect
+#' 
+#' @export
 #'
 collectValuesByGroup<-function(dfr0,collect="y",names_from="z",values_from="val"){
   cols = names(dfr0);
