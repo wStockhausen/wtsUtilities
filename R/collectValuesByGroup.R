@@ -80,6 +80,7 @@ collapseIntegersToString<-function(v){
   s = paste(v[i]);
   lv = length(v);
   if (lv>1){
+    sp="";
     while (i < (lv-1)){
       if ((v[i+1]-v[i])==1) {
         sp = paste0(":",v[i+1]);
