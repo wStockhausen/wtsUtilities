@@ -1,8 +1,8 @@
 Package: wtsUtilities
 Type: Package
 Title: Collection of miscellaneous utility functions developed by William Stockhausen
-Version: 2025.06.11
-Date: 2025-06-11
+Version: 2026.02.24
+Date: 2026-02-24
 Author: William T. Stockhausen
 Maintainer: William T. Stockhausen <william.stockhausen@noaa.gov>
 Description: Collection of miscellaneous utility functions.
@@ -15,16 +15,17 @@ Imports:
     grDevices (>= 3.2.1),
     grid (>= 4.0.0),
     magrittr,
+    readr,
+    rstudioapi, 
     scales,
     sqldf,
     stats,
     stringr (>= 1.0.0),
-    tcltk (>= 3.2.1),
     tibble,
     tidyselect,
     utils
 Suggests: 
     sen2r
 Roxygen: list(markdown=TRUE)
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
 Encoding: UTF-8

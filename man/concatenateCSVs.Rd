@@ -29,7 +29,7 @@ concatenateCSVs(
 }}
 }
 \description{
-Function to concatenate a number of csv files (with identical column strucuture)
+Function to concatenate a number of csv files (with identical column structure)
 into a single csv file.
 }
 \details{

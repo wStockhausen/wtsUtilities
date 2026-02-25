@@ -4,32 +4,25 @@
 #' 
 #' @param ext - extension for files to choose from
 #' @param caption - caption for file dialog (if file name not provided)
-#' @param multi - flag (T/F) to allow multiple file selection
+#' @param path - path to folder (defaults to [rstudioapi::getActiveProject()])
 #' 
-#' @return Selected file name(s). Returns NULL if the user canceled selection using the file dialog.
+#' @return Selected file name. Returns NULL if the user canceled selection using the file dialog.
 #' 
-#' @details Uses \code{tcltk::tk_choose.files} to select file(s).
+#' @details Uses [rstudioapi::selectFile()] to select file.
+#' 
+#' @importFrom rstudioapi getActiveProject selectFile
 #' 
 #' @export
 #' 
 selectFile<-function(ext='*',
-                     caption=paste("Select .",ext," file(s) to import",sep=''),
-                     multi=FALSE){
-    if (ext==''){
+                     caption=paste0("Select .",ext," file to import",),
+                     path=rstudioapi::getActiveProject()){
+    if (ext[1] %in% c('',"*")){
         #this does NOT seem to work for files w/out extensions
-        file<-tcltk::tk_choose.files(caption=caption,multi=multi,
-                                     filters=matrix(c("executables",""),1,2,byrow=TRUE));
-    } else if (ext==' '){
-        #this does NOT seem to work for files w/out extensions
-        file<-tcltk::tk_choose.files(caption=caption,multi=multi,
-                                     filters=matrix(c("executables"," "),1,2,byrow=TRUE));
-    } else if (ext=='*'){
-        file<-tcltk::tk_choose.files(caption=caption,multi=multi,
-                                     filters=matrix(c("All","*"),1,2,byrow=TRUE));
+        file<-rstudioapi::selectFile(caption=caption,label="Select",filter="All Files (*)",existing=TRUE,path=path);
     } else {
         Filters<-addFilter(ext,paste(ext,"files (*.",ext,")",sep=''),paste("*.",ext,sep=''));
-        file<-tcltk::tk_choose.files(caption=caption,multi=multi,
-                                     filters=matrix(Filters[ext,],1,2,byrow=TRUE));
+        file<-rstudioapi::selectFile(caption=caption,label="Select",filter=Filters[ext,],existing=TRUE,path=path);
     }
     if (length(file)==0) return(NULL);
     return(file)

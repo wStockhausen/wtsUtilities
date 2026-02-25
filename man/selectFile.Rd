@@ -6,8 +6,8 @@
 \usage{
 selectFile(
   ext = "*",
-  caption = paste("Select .", ext, " file(s) to import", sep = ""),
-  multi = FALSE
+  caption = paste0("Select .", ext, " file to import", ),
+  path = rstudioapi::getActiveProject()
 )
 }
 \arguments{
@@ -19,16 +19,16 @@ selectFile(
 \item caption for file dialog (if file name not provided)
 }}
 
-\item{multi}{\itemize{
-\item flag (T/F) to allow multiple file selection
+\item{path}{\itemize{
+\item path to folder (defaults to \code{\link[rstudioapi:getActiveProject]{rstudioapi::getActiveProject()}})
 }}
 }
 \value{
-Selected file name(s). Returns NULL if the user canceled selection using the file dialog.
+Selected file name. Returns NULL if the user canceled selection using the file dialog.
 }
 \description{
 Function allows the user to select a file using a gui interface.
 }
 \details{
-Uses \code{tcltk::tk_choose.files} to select file(s).
+Uses \code{\link[rstudioapi:file-dialogs]{rstudioapi::selectFile()}} to select file.
 }

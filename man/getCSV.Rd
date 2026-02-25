@@ -8,7 +8,7 @@ getCSV(csvfile = NULL, caption = "Select csv file to import")
 }
 \arguments{
 \item{csvfile}{\itemize{
-\item name of csv file to open
+\item path to csv file to open (or NULL to invoke a dialog)
 }}
 
 \item{caption}{\itemize{
@@ -16,15 +16,14 @@ getCSV(csvfile = NULL, caption = "Select csv file to import")
 }}
 }
 \value{
-dataframe based on reading csv file. Returns NULL if no csv file
+A tibble based on reading csv file. Returns NULL if no csv file
 was provided and the user canceled selection using the file dialog.
 }
 \description{
 Opens a csv file and returns it as a dataframe.\cr
-If a file name is not provided, the function displays a (tcltk)
+If a file name is not provided, the function displays a
 file chooser dialog.\cr
-Uses package "tcltk".
 }
 \details{
-Uses packages \code{utils}, \pkg{tcltk}.
+The returned object is a \code{\link[tibble:tibble]{tibble::tibble()}}, basically an enhanced dataframe.
 }

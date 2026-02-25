@@ -1,29 +1,28 @@
 #' @title Open a csv file as a dataframe.
 #'  
 #' @description Opens a csv file and returns it as a dataframe.\cr 
-#' If a file name is not provided, the function displays a (tcltk)
+#' If a file name is not provided, the function displays a 
 #' file chooser dialog.\cr 
-#' Uses package "tcltk".
 #' 
-#' @param csvfile - name of csv file to open
+#' @param csvfile - path to csv file to open (or NULL to invoke a dialog)
 #' @param caption - caption for file dialog (if file name not provided)
 #' 
-#' @return dataframe based on reading csv file. Returns NULL if no csv file
+#' @return A tibble based on reading csv file. Returns NULL if no csv file
 #' was provided and the user canceled selection using the file dialog.
 #' 
-#' @details Uses packages \code{utils}, \pkg{tcltk}.
+#' @details The returned object is a [tibble::tibble()], basically an enhanced dataframe.
 #' 
-#' @importFrom tcltk tk_choose.files
-#' 
+#' @importFrom readr read_csv
+#' @importFrom rstudioapi selectFile
 #' @export
 #' 
 getCSV<-function(csvfile=NULL,caption="Select csv file to import"){
     if (is.null(csvfile)) {
-        csvfile<-selectFile(ext='csv',caption=caption);
+        csvfile<-selectFile(ext="csv",caption=caption);
         if (length(csvfile)==0) return(NULL);
     }  
     
-    dfr<-utils::read.csv(file=csvfile,stringsAsFactors=FALSE);
+    dfr<-readr::read_csv(file=csvfile);
     return(dfr)
 }
 

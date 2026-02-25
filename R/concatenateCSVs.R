@@ -1,15 +1,13 @@
 #'
 #'@title Concatenate csv files into one
 #'
-#'@description Function to concatenate a number of csv files (with identical column strucuture)
+#'@description Function to concatenate a number of csv files (with identical column structure)
 #'into a single csv file.
 #'
 #'@param caption - caption for file dialog box
 #'@param out.csv - filename of output csv file
 #'@param out.dir - directory for output csv file
 #'@param method - specifies method used for concatenation ('writeLines' or 'write.table')
-#'
-#'@importFrom tcltk tk_choose.files
 #'
 #'@details None.
 #'
@@ -19,9 +17,22 @@ concatenateCSVs<-function(caption="Select csv files",
                           out.csv='test.csv',
                           out.dir=NULL,
                           method='writeLines'){
-    Filters<-addFilter("csv","csv files (*.csv)","*.csv");
-    in.csvs<-tk_choose.files(caption=caption,
-                             multi=TRUE,filters=matrix(Filters[c("csv"),],1,2,byrow=TRUE));
+    fn = selectFile(ext="csv",caption=caption);
+    if (!is.null(fn)){
+        pth = dirname(fn);
+        fns = fn;
+        while(!is.null(fn)){
+            fn = selectFile(ext="csv",caption=caption,path=pth);
+            if (!is.null(fn)) {
+                pth = dirname(fn);
+                fns = c(fns,fn);
+            }
+        }
+        in.csvs = fns;
+    } else {
+        return(invisible(NULL));
+    }
+    
     if (is.null(out.dir)) {
         out.dir<-dirname(file.path('.'));
         if (!is.null(in.csvs[1])) {out.dir<-dirname(file.path(in.csvs[1]));}
