@@ -7,11 +7,12 @@
 getOperatingSystem()
 }
 \value{
-Either 'MacOSX' or 'Windows'
+Either 'OSX' or 'Windows'
 }
 \description{
 Function that returns the operating system name.
 }
 \details{
-None.
+Checks \code{Sys.info()[['sysname']]} for platform name and returns 'Win'
+if lower case platform name is 'windows', 'OSX' if 'darwin'.
 }
