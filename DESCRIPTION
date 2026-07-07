@@ -1,8 +1,8 @@
 Package: wtsUtilities
 Type: Package
 Title: Collection of miscellaneous utility functions developed by William Stockhausen
-Version: 2026.04.02
-Date: 2026-04-02
+Version: 2026.07.07
+Date: 2026-07-07
 Author: William T. Stockhausen
 Maintainer: William T. Stockhausen <william.stockhausen@noaa.gov>
 Description: Collection of miscellaneous utility functions.
